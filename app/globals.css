@@ -1149,6 +1149,103 @@ section {
 }
 
 /* ============================================
+   STORY — 雑誌風エディトリアル
+   ============================================ */
+.stories {
+  background: var(--bg-primary);
+  padding: var(--section-py-lg) 0;
+}
+.story-editorial-list {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+.story-editorial {
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--r-lg);
+  padding: 40px 32px;
+  position: relative;
+  overflow: hidden;
+}
+.story-editorial::before {
+  content: '"';
+  font-family: var(--font-en);
+  font-size: 120px;
+  font-weight: 800;
+  color: var(--accent);
+  opacity: 0.06;
+  position: absolute;
+  top: -20px;
+  right: 24px;
+  line-height: 1;
+  pointer-events: none;
+}
+.story-editorial-accent {
+  margin-bottom: 20px;
+}
+.story-editorial-label {
+  font-family: var(--font-en);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  padding: 4px 14px;
+  border: 1px solid var(--accent);
+  border-radius: var(--r-full);
+  display: inline-block;
+}
+.story-editorial-heading {
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  letter-spacing: -0.01em;
+}
+.story-editorial-body {
+  font-size: 14px;
+  line-height: 2.1;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+.story-editorial-credit {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-style: italic;
+  letter-spacing: 0.02em;
+}
+
+/* ============================================
+   CTA MESSAGE — 見学誘導
+   ============================================ */
+.cta-message {
+  max-width: 640px;
+  margin: 0 auto 56px;
+  text-align: center;
+}
+.cta-message-heading {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.65;
+  margin-bottom: 32px;
+  letter-spacing: -0.01em;
+}
+.cta-message-body p {
+  font-size: 14px;
+  line-height: 2.2;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+.cta-message-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* ============================================
    TRUST — 10年の実績
    ============================================ */
 .trust {
@@ -1554,7 +1651,7 @@ section {
   .env-item-body h3 { font-size: 15px; word-break: keep-all; overflow-wrap: break-word; }
   .env-item-body p { word-break: keep-all; overflow-wrap: break-word; }
 
-  /* Lifestyle */
+  /* Lifestyle / Work Style */
   .lifestyle-block { padding: 24px 18px; }
   .lifestyle-block h3 { word-break: keep-all; overflow-wrap: break-word; }
   .lifestyle-block p { word-break: keep-all; overflow-wrap: break-word; }
@@ -1563,6 +1660,17 @@ section {
   .flow-step { padding: 18px 14px; }
   .flow-step h4 { word-break: keep-all; overflow-wrap: break-word; }
   .flow-step p { word-break: keep-all; overflow-wrap: break-word; }
+  .flow-arrow svg { transform: rotate(0deg) !important; }
+
+  /* Story */
+  .story-editorial { padding: 28px 20px; }
+  .story-editorial-heading { font-size: 15px; word-break: keep-all; overflow-wrap: break-word; }
+  .story-editorial-body { font-size: 13px; word-break: keep-all; overflow-wrap: break-word; }
+
+  /* CTA Message */
+  .cta-message-heading { font-size: 18px; word-break: keep-all; overflow-wrap: break-word; }
+  .cta-message-body p { font-size: 13px; word-break: keep-all; overflow-wrap: break-word; }
+  .cta-message-body p br { display: none; }
 
   /* FAQ */
   .faq-item summary { padding: 16px 18px; }

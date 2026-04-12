@@ -1433,12 +1433,16 @@ section {
 }
 
 @media (max-width: 767px) {
-  .section-title { font-size: 26px; margin-bottom: 16px; }
-  .section-sub { margin-bottom: 28px; }
+  .section-title { font-size: 24px; margin-bottom: 16px; }
+  .section-sub { margin-bottom: 28px; font-size: 13px; }
   .section-label { margin-bottom: 10px; font-size: 11px; }
   .hero { padding-bottom: 40px; }
-  .hero h1 { font-size: 26px; line-height: 1.5; }
-  .hero-sub-copy { font-size: 10px; margin-bottom: 12px; }
+  .hero h1 { font-size: 24px; line-height: 1.6; letter-spacing: 0; }
+  .hero-sub-copy { font-size: 11px; margin-bottom: 12px; line-height: 1.8; }
+  .bridge { padding: 64px 0 56px; }
+  .bridge-heading { font-size: 22px; line-height: 1.7; letter-spacing: 0.02em; }
+  .bridge-body p { font-size: 14px; line-height: 2; }
+  .bridge-body p br { display: none; }
   .project-card { margin-bottom: 12px; }
   .project-card-body { padding: 16px 14px; }
   .project-card-body h3 { font-size: 16px; }
@@ -1454,5 +1458,7 @@ section {
   .flow-step { padding: 18px 14px; }
   .faq-item summary { padding: 16px 18px; }
   .track-record { padding: 24px 20px; }
+  .about-studio { padding: 24px 20px; }
+  .about-studio-address { font-size: 13px; }
   .site-footer { padding-bottom: 100px; }
 }

@@ -83,7 +83,7 @@ export default function MovieLP() {
           </video>
         </div>
         <div className="hero-content">
-          <p className="hero-sub-copy">パッソアニメーションスタジオ｜働くことに障がいのあるクリエイターのための制作スタジオ（就労継続支援B型）</p>
+          <p className="hero-sub-copy">働くことに障がいのあるクリエイターのための制作スタジオ（就労継続支援B型）</p>
           <h1>
             あなたの「好き」が、仕事になる。<br />
             多彩な企業案件が、揃っています。

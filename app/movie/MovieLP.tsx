@@ -105,8 +105,8 @@ export default function MovieLP() {
         <div className="container">
           <div className="bridge-inner reveal">
             <h2 className="bridge-heading">
-              「好き」であること。<br />
-              それが、何よりの強みになります。
+              <span style={{ display: "inline-block" }}>「好き」であること。</span><br />
+              <span style={{ display: "inline-block" }}>それが、</span><span style={{ display: "inline-block" }}>何よりの強みになります。</span>
             </h2>
             <div className="bridge-body">
               <p>「好きなことには、時間を忘れてのめり込める」</p>

@@ -381,6 +381,26 @@ section {
    ============================================ */
 .projects {
   padding: var(--section-py-lg) 0;
+  background: #ffffff;
+  position: relative;
+}
+.projects::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-subtle), transparent);
+}
+.projects::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-subtle), transparent);
 }
 
 /* ============================================
@@ -441,8 +461,12 @@ section {
 
 .project-card {
   overflow: hidden;
-  transition: transform var(--t-norm), box-shadow var(--t-norm);
+  transition: transform 0.4s var(--ease-out), box-shadow 0.4s var(--ease-out);
   position: relative;
+  border-radius: var(--r-lg);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
 }
 .project-card::after {
   content: '';
@@ -457,8 +481,8 @@ section {
   transition: transform 0.5s var(--ease-out);
 }
 .project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-lg);
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.12);
 }
 .project-card:hover::after {
   transform: scaleX(1);
@@ -469,27 +493,27 @@ section {
 }
 .project-card-thumb img {
   width: 100%;
-  height: 200px;
+  height: 240px;
   object-fit: cover;
   transition: transform 0.8s var(--ease-out);
 }
 .project-card:hover .project-card-thumb img {
-  transform: scale(1.06);
+  transform: scale(1.08);
 }
 
 .project-card-body {
-  padding: 24px 22px 28px;
+  padding: 28px 24px 32px;
 }
 .project-card-body h3 {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   line-height: 1.5;
 }
 .project-card-body p {
   font-size: 13px;
   color: var(--text-secondary);
-  line-height: 1.9;
+  line-height: 2;
 }
 
 /* 10年の実績 */

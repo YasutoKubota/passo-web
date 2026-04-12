@@ -119,6 +119,7 @@ section {
   line-height: 2;
   max-width: 560px;
   font-weight: 400;
+  margin: 0 auto;
 }
 
 .title-sub {

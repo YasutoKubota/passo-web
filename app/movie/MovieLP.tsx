@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 /* ── SVG icon data (shared across sections) ── */
 const LINE_ICON = (
@@ -10,6 +10,21 @@ const LINE_ICON = (
 );
 
 export default function MovieLP() {
+  const [activeStory, setActiveStory] = useState(0);
+
+  const stories = [
+    {
+      name: "Aさん（20代女性 / 未経験スタート）",
+      quote: "「自分には何もない」と思っていました。でもここでPremiere Proに触れ、少しずつ動画が形になる喜びを知りました。今は自分の編集した動画が世に出るのが本当に楽しいです。",
+      avatar: <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="#E6DED3"/><path d="M32 30c3.8 0 7-3.2 7-7s-3.2-7-7-7-7 3.2-7 7 3.2 7 7 7zm0 6c-6.6 0-20 3.3-20 10v4h40v-4c0-6.7-13.4-10-20-10z" fill="#A09890"/></svg>
+    },
+    {
+      name: "Bさん（30代女性 / 経験者）",
+      quote: "前職では納期に追われ体調を崩してしまいましたが、ここでは専属スタッフさんが無理のないスケジュールを組んでくれるので、安心して動画制作に没頭できています。",
+      avatar: <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="#E6DED3"/><path d="M32 30c3.8 0 7-3.2 7-7s-3.2-7-7-7-7 3.2-7 7 3.2 7 7 7zm0 6c-6.6 0-20 3.3-20 10v4h40v-4c0-6.7-13.4-10-20-10z" fill="#A09890"/></svg>
+    }
+  ];
+
   useEffect(() => {
     /* Header scroll effect */
     const header = document.getElementById("header");
@@ -187,6 +202,40 @@ export default function MovieLP() {
           <div className="workflow-closing reveal">
             <div className="workflow-closing-inner glass">
               <p>この制作のサイクルを、無理のないペースで繰り返していく。<br />その経験の積み重ねの中で、実践的なテクニックや仕事の進め方など、クリエイターとしての多彩なスキルが自然と身についていきます。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── SUCCESS STORIES ── */}
+      <section className="stories" id="stories">
+        <div className="container">
+          <div className="stories-header reveal">
+            <div className="section-label"><span className="dot"></span> Voice</div>
+            <h2 className="section-title">先輩クリエイターの声</h2>
+            <p className="section-sub">パッソで新しい一歩を踏み出した方々のお話です。</p>
+          </div>
+          <div className="story-carousel reveal reveal-d1">
+            <div className="story-slides">
+              {stories.map((story, i) => (
+                <div key={i} className={`story-slide ${activeStory === i ? "active" : ""}`}>
+                  <div className="story-avatar">{story.avatar}</div>
+                  <div className="story-name">{story.name}</div>
+                  <div className="story-quote">
+                    <p>{story.quote}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="story-controls">
+              {stories.map((_, i) => (
+                <button
+                  key={i}
+                  className={`story-dot ${activeStory === i ? "active" : ""}`}
+                  aria-label={`Story ${i + 1}`}
+                  onClick={() => setActiveStory(i)}
+                />
+              ))}
             </div>
           </div>
         </div>

@@ -152,8 +152,12 @@ export default function MovieLP() {
           </div>
           <div className="projects-note reveal" style={{ textAlign: "center", marginTop: "48px" }}>
             <p className="section-sub" style={{ margin: "0 auto" }}>
-              現在、Web上の動画編集案件の「8〜9割」が、以上の3つのジャンルで占められています。<br />
-              これらを経験することが、どこでも必要とされるクリエイターになるための一番の近道です。
+              <span style={{ display: "inline-block" }}>現在、Web上の動画編集案件の「8〜9割」が、</span>
+              <span style={{ display: "inline-block" }}>以上の3つのジャンルで占められています。</span>
+            </p>
+            <p className="section-sub" style={{ margin: "0 auto", marginTop: "12px" }}>
+              <span style={{ display: "inline-block" }}>これらを経験することが、どこでも必要とされる</span>
+              <span style={{ display: "inline-block" }}>クリエイターになるための一番の近道です。</span>
             </p>
           </div>
         </div>

@@ -299,7 +299,7 @@ export default function MovieLP() {
               { num: 4, icon: <><path d="M10 4h8l6 6v18H10a2 2 0 01-2-2V6a2 2 0 012-2z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /><path d="M18 4v6h6M12 16h8M12 20h8M12 24h4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></>, title: "受給者証の申請", desc: "お住まいの自治体での申請をスタッフがサポートします。" },
               { num: 5, icon: <><path d="M16 4c0 0-8 6-8 18h16C24 10 16 4 16 4z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /><circle cx="16" cy="16" r="3" stroke="currentColor" strokeWidth="2" /><path d="M10 22l-4 4M22 22l4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></>, title: "利用開始", desc: "あなたの体調に合わせ、クリエイティブ活動が始まります。" },
             ].map((step, i) => (
-              <div key={step.num}>
+              <div key={step.num} className="flow-step-wrapper">
                 <div className={`flow-step reveal reveal-d${Math.min(i + 1, 3)}`} id={`flow-step${step.num}`}>
                   <div className="flow-step-number">{step.num}</div>
                   <div className="flow-step-icon">

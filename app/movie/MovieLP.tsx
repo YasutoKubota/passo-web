@@ -132,7 +132,7 @@ export default function MovieLP() {
           <div className="projects-header reveal">
             <div className="section-label"><span className="dot"></span> PROJECTS</div>
             <h2 className="section-title">制作案件のジャンル</h2>
-            <p className="section-sub">パッソでは、多彩なジャンルの動画制作案件に携わることができます。</p>
+            <p className="section-sub">多種多様な案件に継続的に携わることで、クリエイターとしての制作の幅が大きく拡がります。</p>
           </div>
           <div className="project-cards">
             {[

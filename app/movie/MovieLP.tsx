@@ -461,7 +461,7 @@ export default function MovieLP() {
               </address>
               <div className="about-studio-map">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3266.7!2d137.1617!3d34.9563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6004a31e2a9a1a1d%3A0x0!2z5bKh5bSO44OV44Ot44Oz44OI44OT44Or!5e0!3m2!1sja!2sjp!4v1"
+                  src="https://maps.google.com/maps?q=パッソアニメーションスタジオ&t=&z=16&ie=UTF8&iwloc=&output=embed"
                   width="100%"
                   height="200"
                   style={{ border: 0, borderRadius: "var(--r-sm)", marginTop: 16 }}
@@ -480,7 +480,7 @@ export default function MovieLP() {
               </address>
               <div className="about-studio-map">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3263.5!2d137.1555!3d35.0825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6004bb8e8e8e8e8d%3A0x0!2z6LGK55Sw5biC5b6h5bm45pys55S6!5e0!3m2!1sja!2sjp!4v1"
+                  src="https://maps.google.com/maps?q=Passo+animation+studio豊田&t=&z=16&ie=UTF8&iwloc=&output=embed"
                   width="100%"
                   height="200"
                   style={{ border: 0, borderRadius: "var(--r-sm)", marginTop: 16 }}

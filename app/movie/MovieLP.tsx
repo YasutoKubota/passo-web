@@ -205,7 +205,7 @@ export default function MovieLP() {
         <div className="container">
           <div className="env-header reveal">
             <div className="section-label"><span className="dot"></span> ENVIRONMENT</div>
-            <h2 className="section-title">自分のペースで集中できる場所</h2>
+            <h2 className="section-title">制作環境</h2>
             <p className="section-sub">周囲の目を気にすることなくご自身のペースで作業に向き合えるワークスペースを整えています。</p>
           </div>
           <div className="env-items">
@@ -233,7 +233,7 @@ export default function MovieLP() {
         <div className="container">
           <div className="lifestyle-header reveal">
             <div className="section-label"><span className="dot"></span> WORK STYLE</div>
-            <h2 className="section-title">無理なく制作を続けるために</h2>
+            <h2 className="section-title">制作のサポート</h2>
           </div>
           <div className="lifestyle-blocks">
             <div className="lifestyle-block glass reveal reveal-d1" id="lifestyle-work">
@@ -329,8 +329,8 @@ export default function MovieLP() {
       <section className="stories" id="stories">
         <div className="container">
           <div className="stories-header reveal">
-            <div className="section-label"><span className="dot"></span> STORY</div>
-            <h2 className="section-title">クリエイターの成功ストーリー</h2>
+            <div className="section-label"><span className="dot"></span> VOICE</div>
+            <h2 className="section-title">クリエイターの声</h2>
           </div>
           <div className="story-editorial-list">
             {[
@@ -388,24 +388,6 @@ export default function MovieLP() {
         </div>
       </section>
 
-      {/* ── TRUST ── */}
-      <section className="trust" id="trust">
-        <div className="container">
-          <div className="track-record reveal" id="track-record">
-            <div className="track-record-emblem" aria-hidden="true">
-              <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M60 10C60 10 45 25 35 40C25 55 22 70 22 70C22 70 30 60 40 52C50 44 60 42 60 42C60 42 70 44 80 52C90 60 98 70 98 70C98 70 95 55 85 40C75 25 60 10 60 10Z" fill="currentColor" opacity="0.15" />
-                <text x="60" y="68" textAnchor="middle" fontFamily="'Outfit', sans-serif" fontSize="28" fontWeight="700" fill="currentColor">10th</text>
-              </svg>
-            </div>
-            <div className="track-record-content">
-              <h3>10年の実績と信頼</h3>
-              <p>株式会社Passo a Passoは2014年3月から愛知県岡崎市・豊田市で事業を続けてきました。10年以上にわたる地元企業様や自治体様との信頼関係があるからこそ地元企業はもとより様々な企業様からの多彩な案件が集まっています。</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ── ABOUT ── */}
       <section className="about" id="about">
         <div className="container">
@@ -452,6 +434,24 @@ export default function MovieLP() {
                   title="パッソアニメーションスタジオ豊田"
                 ></iframe>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── TRUST ── */}
+      <section className="trust" id="trust">
+        <div className="container">
+          <div className="track-record reveal" id="track-record">
+            <div className="track-record-emblem" aria-hidden="true">
+              <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M60 10C60 10 45 25 35 40C25 55 22 70 22 70C22 70 30 60 40 52C50 44 60 42 60 42C60 42 70 44 80 52C90 60 98 70 98 70C98 70 95 55 85 40C75 25 60 10 60 10Z" fill="currentColor" opacity="0.15" />
+                <text x="60" y="68" textAnchor="middle" fontFamily="'Outfit', sans-serif" fontSize="28" fontWeight="700" fill="currentColor">10th</text>
+              </svg>
+            </div>
+            <div className="track-record-content">
+              <h3>10年の実績と信頼</h3>
+              <p>株式会社Passo a Passoは2014年3月から愛知県岡崎市・豊田市で事業を続けてきました。10年以上にわたる地元企業様や自治体様との信頼関係があるからこそ地元企業はもとより様々な企業様からの多彩な案件が集まっています。</p>
             </div>
           </div>
         </div>

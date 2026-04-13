@@ -90,8 +90,8 @@ export default function MovieLP() {
         <div className="hero-content">
           <p className="hero-sub-copy">働くことに障がいのあるクリエイターのための制作スタジオ（就労継続支援B型）</p>
           <h1>
-            あなたの「好き」が、仕事になる。<br />
-            多彩な企業案件が、揃っています。
+            あなたの「好き」が仕事になる。<br />
+            多彩な企業案件が揃っています。
           </h1>
           <div className="scroll-hint">
             <span className="scroll-line"></span>
@@ -106,16 +106,16 @@ export default function MovieLP() {
           <div className="bridge-inner reveal">
             <h2 className="bridge-heading">
               <span style={{ display: "inline-block" }}>「好き」であること。</span><br />
-              <span style={{ display: "inline-block" }}>それが、</span><span style={{ display: "inline-block" }}>何よりの力になります。</span>
+              <span style={{ display: "inline-block" }}>それが</span><span style={{ display: "inline-block" }}>何よりの力になります。</span>
             </h2>
             <div className="bridge-body">
-              <p>「好きなことには、時間を忘れてのめり込める」</p>
+              <p>「好きなことには時間を忘れてのめり込める」</p>
               <p>
-                もしそうなら、その「好き」という純粋なエネルギーは、<br />
-                動画制作において、どんなスキルよりも強い原動力になります。
+                もしそうなら、その「好き」という純粋なエネルギーは<br />
+                動画制作においてどんなスキルよりも強い原動力になります。
               </p>
               <p>
-                パッソでは、専属の支援スタッフ（ディレクター）の丁寧なサポートのもとで企業案件にチャレンジできます。<br />
+                パッソでは専属の支援スタッフ（ディレクター）の丁寧なサポートのもとで企業案件にチャレンジできます。<br />
                 ここで手がけた案件が、そのまま自分の実績として積み上がっていきます。
               </p>
               <p>
@@ -135,9 +135,9 @@ export default function MovieLP() {
           </div>
           <div className="project-cards">
             {[
-              { img: "card-short-video.png", alt: "SNSショート動画", title: "SNSショート動画（実写・編集）", desc: "TikTok、Instagramリール、YouTubeショートなど。最新のトレンドを掴む案件です。" },
-              { img: "card-corporate-video.png", alt: "企業PR動画", title: "企業PR・インタビュー動画", desc: "企業の公式チャンネル向けに、インタビューや会社紹介の動画を制作します。" },
-              { img: "card-manga-video.png", alt: "漫画動画", title: "漫画動画の編集", desc: "イラスト素材に動きや音をつけ、多種多様なエンタメ・PR案件に携わります。" },
+              { img: "card-short-video.png", alt: "SNSショート動画", title: "SNSショート動画（実写・編集）", desc: "TikTok・Instagramリール・YouTubeショートなど、最新トレンドを掴む案件です。" },
+              { img: "card-corporate-video.png", alt: "企業PR動画", title: "企業PR・インタビュー動画", desc: "企業の公式チャンネル向けにインタビューや会社紹介の動画を制作します。" },
+              { img: "card-manga-video.png", alt: "漫画動画", title: "漫画動画の編集", desc: "イラスト素材に動きや音をつけて多種多様なエンタメ・PR案件に携わります。" },
             ].map((c, i) => (
               <div className={`project-card glass reveal reveal-d${Math.min(i + 1, 3)}`} key={i}>
                 <div className="project-card-thumb">
@@ -152,12 +152,12 @@ export default function MovieLP() {
           </div>
           <div className="projects-note reveal" style={{ textAlign: "center", marginTop: "48px" }}>
             <p className="section-sub" style={{ margin: "0 auto" }}>
-              <span style={{ display: "inline-block" }}>現在、Web上の動画編集案件の「8〜9割」が、</span>
+              <span style={{ display: "inline-block" }}>現在Web上の動画編集案件の「8〜9割」が</span>
               <span style={{ display: "inline-block" }}>以上の3つのジャンルで占められています。</span>
             </p>
             <p className="section-sub" style={{ margin: "0 auto", marginTop: "12px" }}>
-              <span style={{ display: "inline-block" }}>これらを経験することが、将来フリーランスとして仕事を受けたり、</span>
-              <span style={{ display: "inline-block" }}>企業の制作チームに加わるための、一番の近道です。</span>
+              <span style={{ display: "inline-block" }}>これらを経験することが将来フリーランスとして仕事を受けたり</span>
+              <span style={{ display: "inline-block" }}>企業の制作チームに加わるための一番の近道です。</span>
             </p>
           </div>
         </div>
@@ -169,16 +169,16 @@ export default function MovieLP() {
           <div className="workflow-header reveal">
             <div className="section-label"><span className="dot"></span> WORKFLOW</div>
             <h2 className="section-title">制作のステップ</h2>
-            <p className="section-sub">煩雑な進行管理や企業とのやり取りはディレクターが担当し、クリエイターが制作に専念できる環境を整えています。</p>
+            <p className="section-sub">煩雑な進行管理や企業とのやり取りはディレクターが担当し、クリエイターが制作に専念できる環境です。</p>
           </div>
 
           <div className="wf-steps-editorial">
             {[
-              { img: "wf-proposal.png", num: 1, title: "案件の決定", desc: "クリエイターの現在のスキルや目標、日々のコンディションを考慮し、ディレクターが最適なプロジェクトをアサインします。無理のないペースで取り組めるよう、スケジュールの調整も行います。", note: "", reverse: false },
-              { img: "wf-briefing.png", num: 2, title: "要件の共有と制作スタート", desc: "制作する動画の目的や具体的な要件を、対面やチャット（Teams）で共有します。企業との連絡はすべてディレクターが担当するため、制作そのものに集中することができます。", note: "", reverse: true },
-              { img: "wf-production.png", num: 3, title: "制作と進捗共有", desc: "パーソナルデスクで、ご自身の作業に集中していただきます。制作中に迷うことがあれば、対面やチャット（Teams）でいつでもディレクターに相談できる環境が整っています。", note: "", reverse: false },
-              { img: "wf-review.png", num: 4, title: "レビューと品質向上", desc: "完成した動画は、ディレクターによるレビューを行います。より良い作品にするための具体的なフィードバックを行い、納品基準を満たすクオリティへと引き上げます。", note: "", reverse: true },
-              { img: "wf-portfolio.png", num: 5, title: "納品、そしてご自身の実績へ", desc: "最終確認を終えた作品は、ディレクターが責任を持って企業へ納品します。携わったプロジェクトは、ご自身の確かな「実績（ポートフォリオ）」として蓄積されていきます。", note: "", reverse: false },
+              { img: "wf-proposal.png", num: 1, title: "案件の決定", desc: "クリエイターのスキルや目標、日々のコンディションを考慮しディレクターが最適なプロジェクトをアサインします。無理のないペースで取り組めるようスケジュールの調整も行います。", note: "", reverse: false },
+              { img: "wf-briefing.png", num: 2, title: "要件の共有と制作スタート", desc: "制作する動画の目的や具体的な要件を対面やチャット（Teams）で共有します。企業との連絡はすべてディレクターが担当するため制作に集中できます。", note: "", reverse: true },
+              { img: "wf-production.png", num: 3, title: "制作と進捗共有", desc: "パーソナルデスクでご自身の作業に集中していただきます。制作中に迷うことがあれば対面やチャット（Teams）でいつでもディレクターに相談できる環境です。", note: "", reverse: false },
+              { img: "wf-review.png", num: 4, title: "レビューと品質向上", desc: "完成した動画はディレクターによるレビューを行います。より良い作品にするための具体的なフィードバックを通じ納品基準を満たすクオリティへ引き上げます。", note: "", reverse: true },
+              { img: "wf-portfolio.png", num: 5, title: "納品、そしてご自身の実績へ", desc: "最終確認を終えた作品はディレクターが責任を持って企業へ納品。携わったプロジェクトはご自身の確かな「実績（ポートフォリオ）」として蓄積されていきます。", note: "", reverse: false },
             ].map((s) => (
               <div className={`wf-editorial-step${s.reverse ? " wf-editorial-step--reverse" : ""} reveal`} key={s.num} id={`wf-step${s.num}`}>
                 <div className="wf-editorial-photo">
@@ -196,7 +196,7 @@ export default function MovieLP() {
 
           <div className="workflow-closing reveal">
             <div className="workflow-closing-inner glass">
-              <p>この制作のサイクルを、無理のないペースで繰り返していく。<br />その経験の積み重ねの中で、実践的なテクニックや仕事の進め方など、クリエイターとしての多彩なスキルが自然と身についていきます。その積み上げた実績とスキルが、将来の選択肢を広げていきます。</p>
+              <p>この制作サイクルを無理のないペースで繰り返していく。<br />その経験の積み重ねの中で実践的なテクニックや仕事の進め方などクリエイターとしてのスキルが自然と身についていきます。その積み上げた実績とスキルが将来の選択肢を広げていきます。</p>
             </div>
           </div>
         </div>
@@ -208,7 +208,7 @@ export default function MovieLP() {
           <div className="support-header reveal">
             <div className="section-label"><span className="dot"></span> REASON</div>
             <h2 className="section-title">安定して「企業案件」に取り組める理由</h2>
-            <p className="section-sub">あなたが「つくること」だけに専念できる、徹底した分業体制。それが、当スタジオが数多くの企業案件を継続して手がけられる理由です。</p>
+            <p className="section-sub">あなたが「つくること」だけに専念できる徹底した分業体制。それが当スタジオが数多くの企業案件を継続して手がけられる理由です。</p>
           </div>
           <div className="support-dual">
             <div className="support-pillar glass reveal reveal-d1" id="support-sales">
@@ -219,7 +219,7 @@ export default function MovieLP() {
                 </svg>
               </div>
               <h3>【案件開拓・窓口】専属のディレクターが企業と連携</h3>
-              <p>スタジオには専属のディレクターがおり、継続的に多彩な案件を獲得しています。クライアントとの交渉や細かな調整は、すべてディレクターが担当します。外部との直接的な折衝を任せることはないため、制作そのものに集中できます。その分、スタジオ内でのTeams等を用いた「業務の進捗報告」や「チーム間のコミュニケーション」に専念し、将来に向けたビジネススキルの基盤を作ることができます。</p>
+              <p>スタジオには専属のディレクターがおり継続的に多彩な案件を獲得しています。クライアントとの交渉や細かな調整はすべてディレクターが担当。外部との直接的な折衝を任せることはないため制作に集中できます。その分スタジオ内でのTeams等を用いた「業務の進捗報告」や「チーム間のコミュニケーション」に専念し将来に向けたビジネススキルの基盤を作れます。</p>
             </div>
             <div className="support-pillar glass reveal reveal-d2" id="support-production">
               <div className="support-pillar-icon">
@@ -233,7 +233,7 @@ export default function MovieLP() {
                 </svg>
               </div>
               <h3>【技術・品質管理】現場を知るディレクターが伴走</h3>
-              <p>制作中に行き詰まった時は、いつでもディレクターに相談できます。最終的なクオリティの確認や納品もディレクターが責任を持って行うため、一人で大きなプレッシャーを抱え込むことはありません。</p>
+              <p>制作中に行き詰まったときはいつでもディレクターに相談できます。最終的なクオリティの確認や納品もディレクターが責任を持って行うため一人で大きなプレッシャーを抱え込むことはありません。</p>
             </div>
           </div>
         </div>
@@ -244,14 +244,14 @@ export default function MovieLP() {
         <div className="container">
           <div className="env-header reveal">
             <div className="section-label"><span className="dot"></span> ENVIRONMENT</div>
-            <h2 className="section-title">自分のペースで、集中できる場所</h2>
-            <p className="section-sub">周囲の目を気にすることなく、ご自身のペースで作業に向き合えるワークスペースを整えています。</p>
+            <h2 className="section-title">自分のペースで集中できる場所</h2>
+            <p className="section-sub">周囲の目を気にすることなくご自身のペースで作業に向き合えるワークスペースを整えています。</p>
           </div>
           <div className="env-items">
             {[
-              { img: "env-personal-desk.png", title: "【パーソナルデスク】没頭できる自分だけの空間", desc: "周囲の視線を気にせず、自分の制作に深く集中できる半個室型のデスク。", cls: "reveal-left", reverse: false },
+              { img: "env-personal-desk.png", title: "【パーソナルデスク】没頭できる自分だけの空間", desc: "周囲の視線を気にせず制作に深く集中できる半個室型のデスク。", cls: "reveal-left", reverse: false },
               { img: "env-premiere-pro.png", title: "【Premiere Pro】業界標準の制作ツール", desc: "動画制作の現場で欠かせないAdobe Premiere Proを使用。実戦的なスキルが身につきます。", cls: "reveal-right", reverse: true },
-              { img: "env-teams-chat.png", title: "【チャットツール】仕事の進め方を学ぶ", desc: "案件の指示や相談は、Microsoft Teamsなどのチャットツールで行います。将来の就職やフリーランス活動でも通用する、現代的な仕事の進め方を体験できます。", cls: "reveal-left", reverse: false },
+              { img: "env-teams-chat.png", title: "【チャットツール】仕事の進め方を学ぶ", desc: "案件の指示や相談はMicrosoft Teamsなどのチャットツールで行います。将来の就職やフリーランス活動でも通用する現代的な仕事の進め方を体験できます。", cls: "reveal-left", reverse: false },
             ].map((e, i) => (
               <div className={`env-item${e.reverse ? " env-item--reverse" : ""} ${e.cls}`} key={i}>
                 <div className="env-item-image">
@@ -278,13 +278,13 @@ export default function MovieLP() {
             <div className="lifestyle-block glass reveal reveal-d1" id="lifestyle-work">
               <div className="lifestyle-block-inner">
                 <h3>スキルとコンディションに合わせた案件管理</h3>
-                <p>「企業案件＝厳しい納期」という不安を感じる必要はありません。当スタジオでは、クリエイターの心身の負担となるような、無茶な短納期の案件は事前にお断りしています。ディレクターが企業との間で無理のないスケジュールを調整・管理するため、納期のプレッシャーに追われることなく、ご自身のペースで制作に集中していただけます。</p>
+                <p>「企業案件＝厳しい納期」という不安を感じる必要はありません。当スタジオではクリエイターの心身の負担となるような無茶な短納期の案件は事前にお断りしています。ディレクターが企業との間で無理のないスケジュールを調整・管理するため納期のプレッシャーに追われることなくご自身のペースで制作に集中していただけます。</p>
               </div>
             </div>
             <div className="lifestyle-block lifestyle-block--fitel glass reveal reveal-d2" id="lifestyle-health">
               <div className="lifestyle-block-inner">
                 <h3>アプリを活用したコンディションの可視化</h3>
-                <p>安定してクリエイティブな作業を続けるためには、日々のコンディション把握が重要です。専用アプリ<strong>『Fitel（フィッテル）』</strong>を用いて日々の状態を記録することで、ご自身のバイオリズムを客観的に見つめ直し、持続可能な働き方へと繋げていきます。</p>
+                <p>安定してクリエイティブな作業を続けるためには日々のコンディション把握が重要です。専用アプリ<strong>『Fitel（フィッテル）』</strong>を用いて日々の状態を記録することでご自身のバイオリズムを客観的に見つめ直し持続可能な働き方へと繋げていきます。</p>
               </div>
               <div className="lifestyle-fitel-visual">
                 <img src="/images/fitel-app.png" alt="体調管理ソフトFitelのアプリ画面" width={300} height={600} />
@@ -343,13 +343,13 @@ export default function MovieLP() {
           </div>
           <div className="faq-list">
             {[
-              { q: "ここは動画編集のスクールですか？", a: "いいえ、当スタジオは「学校」ではなく、実際の企業案件を手がける「制作スタジオ」です。実際のプロジェクトに参加し、ディレクターのサポートを受けながら実践的な実績（ポートフォリオ）を積んでいく環境です。" },
-              { q: "利用するための条件はありますか？", a: "精神・知的・身体障がい、難病をお持ちの方で、原則として「障がい者手帳」をお持ちの方、あるいは医師の診断や意見書がある方が対象です。" },
-              { q: "動画編集が全くの未経験なのですが、利用できますか？", a: "はい、パソコンの基本操作ができれば問題ありません。最初はディレクターが基礎から丁寧にお教えしますが、おおむね1ヶ月ほどで実際の企業案件に携わり始める方がほとんどです。" },
-              { q: "この先、どんな働き方に繋がっていきますか？", a: "通っている方が考えている将来は本当にさまざまです。「フリーランスとして自分で案件を受けたい」という方もいれば、「好きなことで月に数万円の収入を得たい」という方、「企業のSNS担当として就職したい」という方もいます。ただ、どの道に進むにしても「ポートフォリオ（制作実績）」は必ず見られます。数も種類も多いほど有利です。パッソでは多彩な企業案件に携わるので、通い続ける中で自然とポートフォリオが充実していきます。" },
-              { q: "制作に対する報酬は支払われますか？", a: "はい。作業時間に応じた基本工賃に加え、実際の企業案件に携わった成果や貢献度に応じた『生産活動ボーナス』を上乗せしてお支払いしています。頑張りがしっかり評価される仕組みです。" },
-              { q: "週に何日から利用できますか？", a: <>経験の有無に関わらず、当スタジオでは「週3日・1日4時間以上」のご利用を推奨しています。<br />未経験の方にとっては「スキルの着実な習得と定着」のため、経験者の方にとっては「企業案件の納期を守り、安定した制作リズムを作る」ため、どちらの場合も継続的な時間が不可欠だと考えています。</> },
-              { q: "在宅での制作（リモートワーク）は可能ですか？", a: "当スタジオでは、原則として通所によるサポートを行っており、在宅支援は行っておりません。スタジオという「仕事の場」に通うことで、生活リズムにメリハリが生まれ、体調の安定にも繋がると考えているからです。対面でのコミュニケーションや現場の空気感に触れることが、社会的な自立への確かな一歩になると信じています。" },
+              { q: "ここは動画編集のスクールですか？", a: "いいえ、当スタジオは「学校」ではなく実際の企業案件を手がける「制作スタジオ」です。実際のプロジェクトに参加しディレクターのサポートを受けながら実践的な実績（ポートフォリオ）を積んでいく環境です。" },
+              { q: "利用するための条件はありますか？", a: "精神・知的・身体障がい・難病をお持ちの方で、原則として「障がい者手帳」をお持ちの方、あるいは医師の診断や意見書がある方が対象です。" },
+              { q: "動画編集が全くの未経験なのですが、利用できますか？", a: "はい、パソコンの基本操作ができれば問題ありません。最初はディレクターが基礎から丁寧にお教えしますがおおむね1ヶ月ほどで実際の企業案件に携わり始める方がほとんどです。" },
+              { q: "この先どんな働き方に繋がっていきますか？", a: "通っている方が考えている将来は本当にさまざまです。「フリーランスとして自分で案件を受けたい」という方もいれば「好きなことで月に数万円の収入を得たい」という方、「企業のSNS担当として就職したい」という方もいます。ただどの道に進むにしても「ポートフォリオ（制作実績）」は必ず見られます。数も種類も多いほど有利です。パッソでは多彩な企業案件に携わるので通い続ける中で自然とポートフォリオが充実していきます。" },
+              { q: "制作に対する報酬は支払われますか？", a: "はい。作業時間に応じた基本工賃に加え企業案件に携わった成果や貢献度に応じた『生産活動ボーナス』を上乗せしてお支払いしています。頑張りがしっかり評価される仕組みです。" },
+              { q: "週に何日から利用できますか？", a: <>経験の有無に関わらず当スタジオでは「週3日・1日4時間以上」のご利用を推奨しています。<br />未経験の方にとっては「スキルの着実な習得と定着」のため、経験者の方にとっては「企業案件の納期を守り安定した制作リズムを作る」ためどちらの場合も継続的な時間が不可欠だと考えています。</> },
+              { q: "在宅での制作（リモートワーク）は可能ですか？", a: "当スタジオでは原則として通所によるサポートを行っており在宅支援は行っておりません。スタジオという「仕事の場」に通うことで生活リズムにメリハリが生まれ体調の安定にも繋がると考えているからです。対面でのコミュニケーションや現場の空気感に触れることが社会的な自立への確かな一歩になると信じています。" },
             ].map((faq, i) => (
               <details className={`faq-item glass reveal reveal-d${Math.min(i + 1, 3)}`} key={i}>
                 <summary className="faq-question">
@@ -413,9 +413,9 @@ export default function MovieLP() {
           <div className="cta-message reveal">
             <h2 className="cta-message-heading">まずは一度、スタジオの雰囲気を見にいらっしゃいませんか？</h2>
             <div className="cta-message-body">
-              <p>「実際の制作環境はどんな雰囲気だろう？」<br />そんな疑問があれば、ぜひ一度、スタジオの空気を感じにいらしてください。<br />現在の状況や、これから目指したい働き方について、お話ししましょう。</p>
-              <p>見学やご相談にお越しいただいたからといって、すぐに利用を決める必要はありません。<br />ここがあなたにとって「心地よく制作に向き合える場所」かどうか、ご自身の目でゆっくりと確かめていただければと思います。</p>
-              <p>少しでもご興味があれば、まずはLINEよりお気軽にお声がけください。<br />スタッフ一同、お会いできるのを楽しみにしております。</p>
+              <p>「実際の制作環境はどんな雰囲気だろう？」<br />そんな疑問があればぜひ一度スタジオの空気を感じにいらしてください。<br />現在の状況やこれから目指したい働き方についてお話ししましょう。</p>
+              <p>見学やご相談にお越しいただいたからといってすぐに利用を決める必要はありません。<br />ここがあなたにとって「心地よく制作に向き合える場所」かどうかご自身の目でゆっくりと確かめていただければと思います。</p>
+              <p>少しでもご興味があればまずはLINEよりお気軽にお声がけください。<br />スタッフ一同お会いできるのを楽しみにしております。</p>
             </div>
           </div>
           <div className="reveal">
@@ -439,7 +439,7 @@ export default function MovieLP() {
             </div>
             <div className="track-record-content">
               <h3>10年の実績と信頼</h3>
-              <p>株式会社Passo a Passoは2013年12月に創立し、2014年3月から愛知県岡崎市・豊田市で事業を続けてきました。10年以上にわたる地元企業様や自治体様との信頼関係があるからこそ、地元企業はもとより、様々な企業様からの多彩な案件が集まっています。</p>
+              <p>株式会社Passo a Passoは2013年12月に創立し2014年3月から愛知県岡崎市・豊田市で事業を続けてきました。10年以上にわたる地元企業様や自治体様との信頼関係があるからこそ地元企業はもとより様々な企業様からの多彩な案件が集まっています。</p>
             </div>
           </div>
         </div>
@@ -498,7 +498,7 @@ export default function MovieLP() {
 
       {/* ── FOOTER ── */}
       <footer className="site-footer" id="footer">
-        <p className="footer-supplement">※イラストレーターも同時募集しています。所属クリエイターが描いたイラストを動画で動かすなど、チームでの制作も行っています。</p>
+        <p className="footer-supplement">※イラストレーターも同時募集しています。所属クリエイターが描いたイラストを動画で動かすなどチームでの制作も行っています。</p>
         <div className="footer-logo">
           <img src="/images/logo-passo.png" alt="パッソアニメーションスタジオ" className="footer-logo-img" />
         </div>

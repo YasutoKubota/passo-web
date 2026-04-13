@@ -115,11 +115,8 @@ export default function MovieLP() {
                 動画制作においてどんなスキルよりも強い原動力になります。
               </p>
               <p>
-                パッソでは専属の支援スタッフ（ディレクター）の丁寧なサポートのもとで企業案件にチャレンジできます。<br />
+                パッソでは専属の支援スタッフ（ディレクター）の丁寧なサポートのもとで企業案件にチャレンジできます。
                 ここで手がけた案件が、そのまま自分の実績として積み上がっていきます。
-              </p>
-              <p>
-                在籍クリエイターが実際に取り組んでいる案件をご紹介します。
               </p>
             </div>
           </div>
@@ -131,7 +128,7 @@ export default function MovieLP() {
         <div className="container">
           <div className="projects-header reveal">
             <div className="section-label"><span className="dot"></span> PROJECTS</div>
-            <h2 className="section-title">在籍クリエイターが手がけている案件</h2>
+            <h2 className="section-title">スタジオの制作案件</h2>
           </div>
           <div className="project-cards">
             {[
@@ -202,42 +199,6 @@ export default function MovieLP() {
         </div>
       </section>
 
-      {/* ── 4. REASON ── */}
-      <section className="support" id="reason">
-        <div className="container">
-          <div className="support-header reveal">
-            <div className="section-label"><span className="dot"></span> REASON</div>
-            <h2 className="section-title">安定して「企業案件」に取り組める理由</h2>
-            <p className="section-sub">あなたが「つくること」だけに専念できる徹底した分業体制。それが当スタジオが数多くの企業案件を継続して手がけられる理由です。</p>
-          </div>
-          <div className="support-dual">
-            <div className="support-pillar glass reveal reveal-d1" id="support-sales">
-              <div className="support-pillar-icon">
-                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="32" cy="32" r="32" fill="currentColor" opacity="0.08" />
-                  <path d="M20 36l-4-4c-1.1-1.1-1.1-2.9 0-4l8-8c1.1-1.1 2.9-1.1 4 0l2 2M44 28l4 4c1.1 1.1 1.1 2.9 0 4l-8 8c-1.1 1.1-2.9 1.1-4 0l-2-2M22 30l10 10M28 24l10 10" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </div>
-              <h3>【案件開拓・窓口】<br />専属のディレクターが企業と連携</h3>
-              <p>スタジオには専属のディレクターがおり継続的に多彩な案件を獲得しています。クライアントとの交渉や細かな調整はすべてディレクターが担当。外部との直接的な折衝を任せることはないため制作に集中できます。その分スタジオ内でのTeams等を用いた「業務の進捗報告」や「チーム間のコミュニケーション」に専念し将来に向けたビジネススキルの基盤を作れます。</p>
-            </div>
-            <div className="support-pillar glass reveal reveal-d2" id="support-production">
-              <div className="support-pillar-icon">
-                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="32" cy="32" r="32" fill="currentColor" opacity="0.08" />
-                  <rect x="14" y="18" width="26" height="18" rx="2" stroke="currentColor" strokeWidth="2.5" />
-                  <path d="M20 40h10M25 36v4" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-                  <circle cx="44" cy="38" r="7" stroke="currentColor" strokeWidth="2" />
-                  <circle cx="44" cy="38" r="2.5" fill="currentColor" opacity="0.3" />
-                  <path d="M44 29v2M44 45v2M37 38h2M49 38h2M39 33l1.4 1.4M47.6 41.6l1.4 1.4M39 43l1.4-1.4M47.6 34.4l1.4-1.4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                </svg>
-              </div>
-              <h3>【技術・品質管理】<br />現場を知るディレクターがサポート</h3>
-              <p>制作中に行き詰まったときはいつでもディレクターに相談できます。最終的なクオリティの確認や納品もディレクターが責任を持って行うため一人で大きなプレッシャーを抱え込むことはありません。</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* ── 5. ENVIRONMENT ── */}
       <section className="environment" id="environment">

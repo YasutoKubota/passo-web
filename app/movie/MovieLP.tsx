@@ -11,6 +11,16 @@ const LINE_ICON = (
 
 export default function MovieLP() {
   const [activeStory, setActiveStory] = useState(0);
+  const [showVideo, setShowVideo] = useState(false);
+
+  /* スマホ（768px以下）では重い動画を読み込まず静止画のみ表示 */
+  useEffect(() => {
+    const mq = window.matchMedia("(min-width: 769px)");
+    setShowVideo(mq.matches);
+    const handler = (e: MediaQueryListEvent) => setShowVideo(e.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
+  }, []);
 
   useEffect(() => {
     /* Header scroll effect */
@@ -83,9 +93,11 @@ export default function MovieLP() {
       <section className="hero" id="hero">
         <div className="hero-bg">
           <img src="/images/hero-creator.png" alt="" width={1200} height={800} className="hero-bg-fallback" />
-          <video className="hero-video" autoPlay muted loop playsInline disablePictureInPicture>
-            <source src="/images/hero-bg-video.mp4" type="video/mp4" />
-          </video>
+          {showVideo && (
+            <video className="hero-video" autoPlay muted loop playsInline disablePictureInPicture>
+              <source src="/images/hero-bg-video.mp4" type="video/mp4" />
+            </video>
+          )}
         </div>
         <div className="hero-content">
           <p className="hero-sub-copy">働くことに障がいのあるクリエイターのための制作スタジオ（就労継続支援B型）</p>

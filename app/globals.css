@@ -1654,6 +1654,7 @@ section {
     letter-spacing: 0.01em;
   }
   .bridge-body { text-align: left; }
+  .bridge-body p:first-child { font-size: 13px; }
   .bridge-body p {
     font-size: 12px;
     line-height: 2;

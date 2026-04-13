@@ -1630,20 +1630,20 @@ section {
 
 @media (max-width: 767px) {
   /* 基本 */
-  .section-title { font-size: 20px; margin-bottom: 14px; }
-  .section-sub { margin-bottom: 24px; font-size: 12px; }
+  .section-title { font-size: 22px; margin-bottom: 14px; }
+  .section-sub { margin-bottom: 24px; font-size: 14px; }
   .section-label { margin-bottom: 10px; font-size: 11px; }
 
   /* Hero */
   .hero { padding: 0 20px 36px; }
   .hero h1 {
-    font-size: 20px;
+    font-size: 22px;
     line-height: 1.7;
     letter-spacing: 0;
     margin-bottom: 24px;
   }
   .hero-sub-copy {
-    font-size: 11px;
+    font-size: 12px;
     margin-bottom: 10px;
     line-height: 1.8;
   }
@@ -1651,14 +1651,14 @@ section {
   /* Bridge */
   .bridge { padding: 56px 0 48px; }
   .bridge-heading {
-    font-size: 17px;
+    font-size: 20px;
     line-height: 1.75;
     letter-spacing: 0.01em;
   }
   .bridge-body { text-align: left; }
-  .bridge-body p:first-child { font-size: 13px; }
+  .bridge-body p:first-child { font-size: 15px; }
   .bridge-body p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 2;
   }
   .bridge-body p br { display: none; }
@@ -1666,63 +1666,63 @@ section {
   /* Projects */
   .project-card { margin-bottom: 12px; }
   .project-card-body { padding: 16px 14px; }
-  .project-card-body h3 { font-size: 14px; }
-  .project-card-body p { font-size: 12px; }
+  .project-card-body h3 { font-size: 16px; }
+  .project-card-body p { font-size: 14px; }
 
   /* Workflow */
   .workflow .container { padding: 0 20px; }
   .wf-editorial-photo img { height: 180px; }
   .wf-editorial-body { padding: 20px 18px 24px; }
-  .wf-editorial-body h3 { font-size: 14px; }
-  .wf-editorial-body p { font-size: 12px; }
+  .wf-editorial-body h3 { font-size: 16px; }
+  .wf-editorial-body p { font-size: 14px; }
   .workflow-closing { margin-top: 28px; }
   .workflow-closing-inner { padding: 24px 18px; }
-  .workflow-closing-inner p { font-size: 12px; }
+  .workflow-closing-inner p { font-size: 14px; }
 
   /* Support */
   .support-pillar { padding: 28px 18px; }
-  .support-pillar h3 { font-size: 14px; }
-  .support-pillar p { font-size: 12px; }
+  .support-pillar h3 { font-size: 16px; }
+  .support-pillar p { font-size: 14px; }
 
   /* Environment */
   .env-item { margin-bottom: 24px; }
   .env-item-body { padding: 20px; }
-  .env-item-body h3 { font-size: 14px; }
-  .env-item-body p { font-size: 12px; }
+  .env-item-body h3 { font-size: 16px; }
+  .env-item-body p { font-size: 14px; }
 
   /* Lifestyle / Work Style */
   .lifestyle-block { padding: 24px 18px; }
-  .lifestyle-block p { font-size: 12px; }
+  .lifestyle-block p { font-size: 14px; }
 
   /* Flow */
   .flow .container { padding: 0 20px; }
   .flow-step { padding: 18px 14px; }
-  .flow-step h4 { font-size: 13px; }
-  .flow-step p { font-size: 11px; }
+  .flow-step h4 { font-size: 15px; }
+  .flow-step p { font-size: 13px; }
   .flow-arrow svg { transform: rotate(0deg) !important; }
 
   /* Story */
   .story-editorial { padding: 28px 20px; }
-  .story-editorial-heading { font-size: 15px; }
-  .story-editorial-body { font-size: 13px; }
+  .story-editorial-heading { font-size: 16px; }
+  .story-editorial-body { font-size: 14px; }
 
   /* CTA Message */
-  .cta-message-heading { font-size: 18px; }
-  .cta-message-body p { font-size: 13px; }
+  .cta-message-heading { font-size: 20px; }
+  .cta-message-body p { font-size: 14px; }
   .cta-message-body p br { display: none; }
 
   /* FAQ */
   .faq-item summary { padding: 16px 14px; gap: 10px; }
-  .faq-q-text { font-size: 13px; }
+  .faq-q-text { font-size: 14px; }
   .faq-answer { padding: 0 14px 20px 42px; }
-  .faq-answer p { font-size: 12px; }
+  .faq-answer p { font-size: 14px; }
 
   /* Trust & About */
   .track-record { padding: 24px 20px; flex-direction: column; align-items: center; text-align: center; }
-  .track-record-content p { font-size: 12px; }
+  .track-record-content p { font-size: 14px; }
   .about-studio { padding: 24px 20px; }
-  .about-studio-label { font-size: 13px; }
-  .about-studio-address { font-size: 12px; }
+  .about-studio-label { font-size: 14px; }
+  .about-studio-address { font-size: 13px; }
 
   /* Footer */
   .site-footer { padding-bottom: 100px; }

@@ -1636,6 +1636,13 @@ section {
 
   /* Hero */
   .hero { padding: 0 20px 36px; }
+  .hero-video {
+    /* モバイルでは動画を自然な16:9サイズで表示し、横幅を広く見せる */
+    height: auto;
+    bottom: auto;
+    object-fit: initial;
+    transform: none;
+  }
   .hero h1 {
     font-size: 22px;
     line-height: 1.7;

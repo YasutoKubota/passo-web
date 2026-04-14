@@ -413,7 +413,7 @@ section {
    ============================================ */
 .bridge {
   padding: 96px 0 80px;
-  background: var(--bg-primary);
+  background: var(--bg-secondary);
   text-align: center;
 }
 

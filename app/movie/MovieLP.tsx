@@ -88,10 +88,12 @@ export default function MovieLP() {
           </video>
         </div>
         <div className="hero-content">
-          <p className="hero-sub-copy">働くことに障がいのあるクリエイターのための制作スタジオ（就労継続支援B型）</p>
+          <div className="section-label" style={{ marginBottom: 16, opacity: 0, animation: "heroFade 0.8s var(--ease-out) 0.2s forwards" }}>
+            <span className="dot"></span>
+            PASSO ANIMATION STUDIO
+          </div>
           <h1>
-            あなたの「好き」が仕事になる。<br />
-            多彩な企業案件が揃っています。
+            あなたの「好き」が仕事になる。
           </h1>
           <div className="scroll-hint">
             <span className="scroll-line"></span>
@@ -115,8 +117,7 @@ export default function MovieLP() {
                 動画制作においてどんなスキルよりも強い原動力になります。
               </p>
               <p>
-                パッソでは専属の支援スタッフ（ディレクター）の丁寧なサポートのもとで企業案件にチャレンジできます。
-                ここで手がけた案件が、そのまま自分の実績として積み上がっていきます。
+                パッソはこれまで累計200件を超える企業案件を受託してきました。専属の支援スタッフ（ディレクター）の丁寧なサポートのもと、ここで手がけた案件がそのままあなたの実績として積み上がっていきます。
               </p>
             </div>
           </div>
@@ -233,7 +234,7 @@ export default function MovieLP() {
         <div className="container">
           <div className="lifestyle-header reveal">
             <div className="section-label"><span className="dot"></span> WORK STYLE</div>
-            <h2 className="section-title">制作のサポート</h2>
+            <h2 className="section-title">サポート体制</h2>
           </div>
           <div className="lifestyle-blocks">
             <div className="lifestyle-block glass reveal reveal-d1" id="lifestyle-work">
@@ -311,6 +312,7 @@ export default function MovieLP() {
               { q: "制作に対する報酬は支払われますか？", a: "はい。作業時間に応じた基本工賃に加え企業案件に携わった成果や貢献度に応じた『生産活動ボーナス』を上乗せしてお支払いしています。頑張りがしっかり評価される仕組みです。" },
               { q: "週に何日から利用できますか？", a: <>経験の有無に関わらず当スタジオでは「週3日・1日4時間以上」のご利用を推奨しています。<br />未経験の方にとっては「スキルの着実な習得と定着」のため、経験者の方にとっては「企業案件の納期を守り安定した制作リズムを作る」ためどちらの場合も継続的な時間が不可欠だと考えています。</> },
               { q: "在宅での制作（リモートワーク）は可能ですか？", a: "当スタジオでは原則として通所によるサポートを行っており在宅支援は行っておりません。スタジオという「仕事の場」に通うことで生活リズムにメリハリが生まれ体調の安定にも繋がると考えているからです。対面でのコミュニケーションや現場の空気感に触れることが社会的な自立への確かな一歩になると信じています。" },
+              { q: "「受給者証」とは何ですか？持っていなくても利用できますか？", a: "受給者証とは、障害福祉サービスを利用するために必要な証明書で、お住まいの市区町村の窓口で申請します。障がい者手帳をお持ちでない方でも、主治医の意見書（または診断書）があれば申請できる場合があります。ただし申請には市区町村による審査があり、状況によって異なります。「自分は対象になるの？」「手続きが不安」という方も、スタッフが一緒に確認しますのでまずはお気軽にご相談ください。" },
             ].map((faq, i) => (
               <details className={`faq-item glass reveal reveal-d${Math.min(i + 1, 3)}`} key={i}>
                 <summary className="faq-question">
@@ -375,7 +377,7 @@ export default function MovieLP() {
             <h2 className="cta-message-heading">まずは一度、スタジオの雰囲気を見にいらっしゃいませんか？</h2>
             <div className="cta-message-body">
               <p>「実際の制作環境はどんな雰囲気だろう？」<br />そんな疑問があればぜひ一度スタジオの空気を感じにいらしてください。<br />現在の状況やこれから目指したい働き方についてお話ししましょう。</p>
-              <p>見学やご相談にお越しいただいたからといってすぐに利用を決める必要はありません。<br />ここがあなたにとって「心地よく制作に向き合える場所」かどうかご自身の目でゆっくりと確かめていただければと思います。</p>
+              <p>見学やご相談にお越しいただいたからといってすぐに利用を決める必要はありません。<br />ここがあなたにとって「心地よく制作に向き合える場所」かどうか、あなた自身の目でゆっくりと確かめていただければと思います。</p>
               <p>少しでもご興味があればまずはLINEよりお気軽にお声がけください。<br />スタッフ一同お会いできるのを楽しみにしております。</p>
             </div>
           </div>

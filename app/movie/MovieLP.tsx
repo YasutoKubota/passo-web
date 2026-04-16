@@ -130,14 +130,15 @@ export default function MovieLP() {
       <section className="projects" id="projects">
         <div className="container">
           <div className="projects-header reveal">
-            <div className="section-label"><span className="dot"></span> PROJECTS</div>
-            <h2 className="section-title">スタジオの制作案件</h2>
+            <div className="section-label"><span className="dot"></span> WORKS</div>
+            <h2 className="section-title">チームで手がける企業案件</h2>
           </div>
           <div className="project-cards">
             {[
-              { img: "card-short-video.png", alt: "SNSショート動画", title: "SNSショート動画（実写・編集）", desc: "TikTok・Instagramリール・YouTubeショートなど、最新トレンドを掴む案件です。" },
-              { img: "card-corporate-video.png", alt: "企業PR動画", title: "企業PR・インタビュー動画", desc: "企業の公式チャンネル向けにインタビューや会社紹介の動画を制作します。" },
-              { img: "card-manga-video.png", alt: "漫画動画", title: "漫画動画の編集", desc: "イラスト素材に動きや音をつけて多種多様なエンタメ・PR案件に携わります。" },
+              { img: "card-short-video.png", alt: "SNSショート・Web動画広告", title: "SNSショート・Web動画広告", desc: "TikTok、Instagramリール、YouTubeショートなどの縦型動画から、Web上の動画広告まで。テンポの良いカット編集やテロップデザインを形にします。" },
+              { img: "card-corporate-video.png", alt: "コーポレート・採用PR映像", title: "コーポレート・採用PR映像", desc: "企業の公式チャンネルや採用特設サイトに向けた映像制作。経営者や社員のインタビュー、社内風景のドキュメンタリーなど、企業の魅力を視覚的に翻訳し、外部へ発信します。" },
+              { img: "card-manga-video.png", alt: "漫画動画・YouTubeエンタメ編集", title: "漫画動画・YouTubeエンタメ編集", desc: "企業が運営するビジネス系・エンタメ系チャンネルの動画編集。トークのカットアップや、イラスト素材を活用した漫画動画など、それぞれのチャンネルに合わせた世界観を形にします。" },
+              { img: "card-motion-graphics.png", alt: "モーショングラフィックス", title: "モーショングラフィックス（キーフレームアニメーション）", desc: "イラストやテキストなどの素材を、キーフレームを使って動かしていく編集作業。静止画に細やかな動きや表情を加え、映像ならではの豊かな表現を手がけます。" },
             ].map((c, i) => (
               <div className={`project-card glass reveal reveal-d${Math.min(i + 1, 3)}`} key={i}>
                 <div className="project-card-thumb">
@@ -152,16 +153,14 @@ export default function MovieLP() {
           </div>
           <div className="projects-note reveal" style={{ textAlign: "center", marginTop: "48px" }}>
             <p className="section-sub" style={{ margin: "0 auto" }}>
-              <span style={{ display: "inline-block" }}>現在Web上の動画編集案件の「8〜9割」が</span>
-              <span style={{ display: "inline-block" }}>以上の3つのジャンルで占められています。</span>
+              <span style={{ display: "inline-block" }}>スタジオが手がけるのは、</span>
+              <span style={{ display: "inline-block" }}>多岐にわたるジャンルの企業案件です。</span>
             </p>
             <p className="section-sub" style={{ margin: "0 auto", marginTop: "12px" }}>
-              <span style={{ display: "inline-block" }}>これらを経験することが将来フリーランスとして仕事を受けたり</span>
-              <span style={{ display: "inline-block" }}>企業の制作チームに加わるための一番の近道です。</span>
-            </p>
-            <p className="section-sub" style={{ margin: "0 auto", marginTop: "12px" }}>
-              <span style={{ display: "inline-block" }}>イラストレーターと動画編集者がチームで</span>
-              <span style={{ display: "inline-block" }}>制作する案件もあります。</span>
+              <span style={{ display: "inline-block" }}>クライアントの意図を汲み取り、</span>
+              <span style={{ display: "inline-block" }}>チームで映像として完成させる。</span><br />
+              <span style={{ display: "inline-block" }}>その日々の仕事が、</span>
+              <span style={{ display: "inline-block" }}>あなたを「選ばれるクリエイター」にします。</span>
             </p>
           </div>
         </div>

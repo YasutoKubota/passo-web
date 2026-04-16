@@ -460,7 +460,7 @@ section {
 .project-cards {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 24px;
   margin-bottom: 56px;
 }
 
@@ -498,7 +498,7 @@ section {
 }
 .project-card-thumb img {
   width: 100%;
-  height: 240px;
+  height: 220px;
   object-fit: cover;
   transition: transform 0.8s var(--ease-out);
 }
@@ -507,18 +507,18 @@ section {
 }
 
 .project-card-body {
-  padding: 28px 24px 32px;
+  padding: 32px 28px 36px;
 }
 .project-card-body h3 {
   font-size: 17px;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   line-height: 1.5;
 }
 .project-card-body p {
-  font-size: 13px;
+  font-size: 14px;
   color: var(--text-secondary);
-  line-height: 2;
+  line-height: 2.1;
 }
 
 /* 10年の実績 */
@@ -1499,10 +1499,10 @@ section {
 
   .project-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
   }
-  .project-card-thumb img { height: 190px; }
+  .project-card-thumb img { height: 260px; }
 
   /* Workflow: 2-column editorial on tablet+ */
   .wf-editorial-step {
@@ -1597,7 +1597,7 @@ section {
   .bridge { padding: 160px 0 140px; }
   .bridge-heading { font-size: 38px; }
 
-  .project-card-thumb img { height: 210px; }
+  .project-card-thumb img { height: 300px; }
   .env-item-image img { height: 320px; }
   .env-item-body h3 { font-size: 19px; }
 

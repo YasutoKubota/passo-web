@@ -227,7 +227,50 @@ export default function MovieLP() {
         </div>
       </section>
 
-      {/* ── 7. FLOW ── */}
+      {/* ── VOICE ── */}
+      <section className="stories" id="stories">
+        <div className="container">
+          <div className="stories-header reveal">
+            <div className="section-label"><span className="dot"></span> VOICE</div>
+            <h2 className="section-title">クリエイターの声</h2>
+          </div>
+          <div className="story-editorial-list">
+            {[
+              {
+                label: "STORY A",
+                heading: "趣味だった動画制作が、仕事になった。",
+                body: "元々は趣味でYouTubeの切り抜き動画などを作っていて、パッソを知りました。最初は「本当にできるのかな？」と不安でしたが、企業の案件を任せてもらえることが大きなモチベーションになりました。今では自分から「もっと案件はないですか？」とスタッフに聞いてしまうほど、前向きに取り組めています。",
+                credit: "Aさん（在籍クリエイター）",
+              },
+              {
+                label: "STORY B",
+                heading: "ひとりでは越えられなかった壁を、パッソで越えました。",
+                body: "動画編集でお金を稼ぎたいと思い、無料ソフトでひとりで試行錯誤しながら始めました。\n\nでも思うように収入には繋がらなくて。そんな時にパッソを知りました。\n\n来てからはPremiere Proでの編集に移りましたが、これまでとは違うソフトで最初の数週間は戸惑いの連続でした。それでもスタッフが丁寧に教えてくれたおかげで、気づいたら楽しくなっていて、企業案件を任せてもらえるようになっていました。\n\n今では毎日制作に向き合えています。",
+                credit: "Bさん（在籍クリエイター）",
+              },
+              {
+                label: "STORY C",
+                heading: "パッソでの仕事が、フリーランス独立へ繋がった。",
+                body: "パッソに通うリズムができたことで、昼夜逆転していた生活が自然と整っていきました。\n\n企業案件に携わることで、仕事の進め方やチームでの動き方を覚え、いつの間にか自信がついていきました。ここで手がけた企業案件がそのまま自分のポートフォリオになったことで、独立してからも仕事が取りやすくなりました。",
+                credit: "Cさん（フリーランス独立）",
+              },
+            ].map((story, i) => (
+              <div className={`story-editorial ${i % 2 !== 0 ? "story-editorial--reverse" : ""} reveal`} key={i}>
+                <div className="story-editorial-accent">
+                  <span className="story-editorial-label">{story.label}</span>
+                </div>
+                <div className="story-editorial-content">
+                  <h3 className="story-editorial-heading">{story.heading}</h3>
+                  <p className="story-editorial-body">{story.body}</p>
+                  <span className="story-editorial-credit">{story.credit}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── FLOW ── */}
       <section className="flow" id="flow">
         <div className="container">
           <div className="flow-header reveal">
@@ -267,7 +310,7 @@ export default function MovieLP() {
         </div>
       </section>
 
-      {/* ── 8. FAQ ── */}
+      {/* ── Q&A ── */}
       <section className="faq" id="faq">
         <div className="container">
           <div className="faq-header reveal">
@@ -293,49 +336,6 @@ export default function MovieLP() {
                 </summary>
                 <div className="faq-answer"><p>{faq.a}</p></div>
               </details>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── STORY ── */}
-      <section className="stories" id="stories">
-        <div className="container">
-          <div className="stories-header reveal">
-            <div className="section-label"><span className="dot"></span> VOICE</div>
-            <h2 className="section-title">クリエイターの声</h2>
-          </div>
-          <div className="story-editorial-list">
-            {[
-              {
-                label: "STORY A",
-                heading: "趣味だった動画制作が、仕事になった。",
-                body: "元々は趣味でYouTubeの切り抜き動画などを作っていて、パッソを知りました。最初は「本当にできるのかな？」と不安でしたが、企業の案件を任せてもらえることが大きなモチベーションになりました。今では自分から「もっと案件はないですか？」とスタッフに聞いてしまうほど、前向きに取り組めています。",
-                credit: "Aさん（在籍クリエイター）",
-              },
-              {
-                label: "STORY B",
-                heading: "ひとりでは越えられなかった壁を、パッソで越えました。",
-                body: "動画編集でお金を稼ぎたいと思い、無料ソフトでひとりで試行錯誤しながら始めました。\n\nでも思うように収入には繋がらなくて。そんな時にパッソを知りました。\n\n来てからはPremiere Proでの編集に移りましたが、これまでとは違うソフトで最初の数週間は戸惑いの連続でした。それでもスタッフが丁寧に教えてくれたおかげで、気づいたら楽しくなっていて、企業案件を任せてもらえるようになっていました。\n\n今では毎日制作に向き合えています。",
-                credit: "Bさん（在籍クリエイター）",
-              },
-              {
-                label: "STORY C",
-                heading: "パッソでの仕事が、フリーランス独立へ繋がった。",
-                body: "パッソに通うリズムができたことで、昼夜逆転していた生活が自然と整っていきました。\n\n企業案件に携わることで、仕事の進め方やチームでの動き方を覚え、いつの間にか自信がついていきました。ここで手がけた企業案件がそのまま自分のポートフォリオになったことで、独立してからも仕事が取りやすくなりました。",
-                credit: "Cさん（フリーランス独立）",
-              },
-            ].map((story, i) => (
-              <div className={`story-editorial ${i % 2 !== 0 ? "story-editorial--reverse" : ""} reveal`} key={i}>
-                <div className="story-editorial-accent">
-                  <span className="story-editorial-label">{story.label}</span>
-                </div>
-                <div className="story-editorial-content">
-                  <h3 className="story-editorial-heading">{story.heading}</h3>
-                  <p className="story-editorial-body">{story.body}</p>
-                  <span className="story-editorial-credit">{story.credit}</span>
-                </div>
-              </div>
             ))}
           </div>
         </div>

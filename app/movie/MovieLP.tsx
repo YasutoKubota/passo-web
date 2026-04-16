@@ -93,7 +93,8 @@ export default function MovieLP() {
             PASSO ANIMATION STUDIO
           </div>
           <h1>
-            あなたの「好き」が仕事になる。
+            <span style={{ display: "inline-block" }}>企業案件で創る、</span><span style={{ display: "inline-block" }}>「実務レベル」のポートフォリオ。</span><br />
+            <span style={{ display: "inline-block" }}>それが、あなたを</span><span style={{ display: "inline-block" }}>「選ばれるクリエイター」にする。</span>
           </h1>
           <div className="scroll-hint">
             <span className="scroll-line"></span>
@@ -107,17 +108,40 @@ export default function MovieLP() {
         <div className="container">
           <div className="bridge-inner reveal">
             <h2 className="bridge-heading">
-              <span style={{ display: "inline-block" }}>「好き」であること。</span><br />
-              <span style={{ display: "inline-block" }}>それが</span><span style={{ display: "inline-block" }}>何よりの力になります。</span>
+              <span style={{ display: "inline-block" }}>動画編集を、</span><span style={{ display: "inline-block" }}>続けてきたあなたへ。</span>
             </h2>
             <div className="bridge-body">
-              <p>「好きなことには時間を忘れてのめり込める」</p>
               <p>
-                もしそうなら、その「好き」という純粋なエネルギーは<br />
-                動画制作においてどんなスキルよりも強い原動力になります。
+                パッソアニメーションスタジオは、<br />
+                企業から映像制作を受託する<br />
+                クリエイターチームです。
               </p>
               <p>
-                パッソはこれまで累計200件を超える企業案件を受託してきました。専属の支援スタッフ（ディレクター）の丁寧なサポートのもと、ここで手がけた案件がそのままあなたの実績として積み上がっていきます。
+                年間200件以上の案件が常に動くこのチームで、<br />
+                あなたが携わる仕事は、<br />
+                そのままあなたのポートフォリオになります。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── ELIGIBILITY ── */}
+      <section className="eligibility" id="eligibility">
+        <div className="container">
+          <div className="eligibility-inner glass reveal">
+            <h2 className="eligibility-heading">ご利用について</h2>
+            <div className="eligibility-body">
+              <p>
+                パッソアニメーションスタジオは、<br />
+                働くことに障がいのある方のための<br />
+                就労継続支援B型事業所です。
+              </p>
+              <p>
+                障害者手帳または医師の意見書をお持ちの方が対象です。<br />
+                週3日以上の通所を推奨しています。<br />
+                利用にあたっては受給者証の取得が必要です。<br />
+                対象の方は無償または低負担でご利用いただけます。
               </p>
             </div>
           </div>
@@ -156,6 +180,10 @@ export default function MovieLP() {
             <p className="section-sub" style={{ margin: "0 auto", marginTop: "12px" }}>
               <span style={{ display: "inline-block" }}>これらを経験することが将来フリーランスとして仕事を受けたり</span>
               <span style={{ display: "inline-block" }}>企業の制作チームに加わるための一番の近道です。</span>
+            </p>
+            <p className="section-sub" style={{ margin: "0 auto", marginTop: "12px" }}>
+              <span style={{ display: "inline-block" }}>イラストレーターと動画編集者がチームで</span>
+              <span style={{ display: "inline-block" }}>制作する案件もあります。</span>
             </p>
           </div>
         </div>
@@ -266,8 +294,8 @@ export default function MovieLP() {
           <div className="flow-steps">
             {[
               { num: 1, icon: <path d="M6 8h20v14H10l-4 4V8z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />, circles: [12, 16, 20], title: "お問い合わせ", desc: "まずはLINEより、お気軽にお問い合わせください。" },
-              { num: 2, icon: <><path d="M4 16s5-8 12-8 12 8 12 8-5 8-12 8S4 16 4 16z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /><circle cx="16" cy="16" r="4" stroke="currentColor" strokeWidth="2" /></>, title: "見学", desc: "スタジオの洗練された雰囲気や、実際の制作現場をご案内します。" },
-              { num: 3, icon: <><rect x="6" y="8" width="20" height="14" rx="2" stroke="currentColor" strokeWidth="2" /><path d="M2 24h28" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></>, title: "体験利用（3日間）", desc: "実際の制作環境に触れていただき、ご自身のペースに合うかをご確認いただけます。" },
+              { num: 2, icon: <><path d="M4 16s5-8 12-8 12 8 12 8-5 8-12 8S4 16 4 16z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /><circle cx="16" cy="16" r="4" stroke="currentColor" strokeWidth="2" /></>, title: "見学", desc: "スタジオの洗練された雰囲気や、制作現場をご案内します。" },
+              { num: 3, icon: <><rect x="6" y="8" width="20" height="14" rx="2" stroke="currentColor" strokeWidth="2" /><path d="M2 24h28" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></>, title: "体験利用（3日間）", desc: "制作環境に触れていただき、ご自身のペースに合うかをご確認いただけます。" },
               { num: 4, icon: <><path d="M10 4h8l6 6v18H10a2 2 0 01-2-2V6a2 2 0 012-2z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /><path d="M18 4v6h6M12 16h8M12 20h8M12 24h4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></>, title: "受給者証の申請", desc: "お住まいの自治体での必要なお手続きは、ディレクターが丁寧にサポートします。" },
               { num: 5, icon: <><path d="M16 4c0 0-8 6-8 18h16C24 10 16 4 16 4z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /><circle cx="16" cy="16" r="3" stroke="currentColor" strokeWidth="2" /><path d="M10 22l-4 4M22 22l4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></>, title: "利用開始", desc: "ご自身のペースで、クリエイターとしての活動がスタートします。" },
             ].map((step, i) => (
@@ -305,10 +333,10 @@ export default function MovieLP() {
           </div>
           <div className="faq-list">
             {[
-              { q: "ここは動画編集のスクールですか？", a: "いいえ、当スタジオは「学校」ではなく実際の企業案件を手がける「制作スタジオ」です。携わった案件がポートフォリオとして積み上がり、あなたらしい働き方を見つけていくための就労継続支援B型事業所です。" },
+              { q: "ここは動画編集のスクールですか？", a: "いいえ、当スタジオは「学校」ではなく企業案件を手がける「制作スタジオ」です。携わった案件がそのままあなたの実績として積み上がります。なお、パッソアニメーションスタジオは働くことに障がいのある方のための就労継続支援B型事業所です。" },
               { q: "利用するための条件はありますか？", a: "精神・知的・身体障がい・難病をお持ちの方で、原則として「障がい者手帳」をお持ちの方、あるいは医師の診断や意見書がある方が対象です。なお、ご利用にあたっては「受給者証」という証明書の取得が必要です（詳しくは下記をご覧ください）。" },
               { q: "「受給者証」とは何ですか？持っていなくても利用できますか？", a: "受給者証とは、障害福祉サービスを利用するために必要な証明書で、お住まいの市区町村の窓口で申請します。障がい者手帳をお持ちでない方でも、主治医の意見書（または診断書）があれば申請できる場合があります。ただし申請には市区町村による審査があり、状況によって異なります。「自分は対象になるの？」「手続きが不安」という方も、スタッフが一緒に確認しますのでまずはお気軽にご相談ください。" },
-              { q: "動画編集が全くの未経験なのですが、利用できますか？", a: "はい、パソコンの基本操作ができれば問題ありません。最初はディレクターが基礎から丁寧にお教えしますがおおむね1ヶ月ほどで実際の企業案件に携わり始める方がほとんどです。" },
+              { q: "動画編集が全くの未経験なのですが、利用できますか？", a: "はい、パソコンの基本操作ができれば問題ありません。最初はディレクターが基礎から丁寧にお教えしますがおおむね1ヶ月ほどで企業案件に携わり始める方がほとんどです。" },
               { q: "この先どんな働き方に繋がっていきますか？", a: "通っている方が考えている将来は本当にさまざまです。「フリーランスとして自分で案件を受けたい」という方もいれば「好きなことで月に数万円の収入を得たい」という方、「企業のSNS担当として就職したい」という方もいます。ただどの道に進むにしても「ポートフォリオ（制作実績）」は必ず見られます。数も種類も多いほど有利です。パッソでは多彩な企業案件に携わるので通い続ける中で自然とポートフォリオが充実していきます。" },
               { q: "制作に対する報酬は支払われますか？", a: "はい。作業時間に応じた基本工賃に加え企業案件に携わった成果や貢献度に応じた『生産活動ボーナス』を上乗せしてお支払いしています。頑張りがしっかり評価される仕組みです。" },
               { q: "週に何日から利用できますか？", a: <>経験の有無に関わらず当スタジオでは「週3日・1日4時間以上」のご利用を推奨しています。<br />未経験の方にとっては「スキルの着実な習得と定着」のため、経験者の方にとっては「企業案件の納期を守り安定した制作リズムを作る」ためどちらの場合も継続的な時間が不可欠だと考えています。</> },
@@ -339,19 +367,19 @@ export default function MovieLP() {
               {
                 label: "STORY A",
                 heading: "独学と無料ソフトの壁を実感。今では本格的な環境で企業案件を担当しています",
-                body: "最初はアルバイト代わりに動画編集で稼ごうと、無料のソフトを使って独学で始めました。自分では「そこそこのクオリティ」を作れているつもりだったのですが、実際の案件獲得には全く繋がらず……。業界標準である『Premiere Pro』の壁や、一人で学ぶことの限界を痛感していました。\n\nそんな時にパッソを知り、「好きなことを、ちゃんとした仕事にしたい」と一念発起。今では本格的な制作環境でスキルを磨きながら、責任を持って企業案件をしっかりと任せてもらえるようになりました。",
+                body: "最初はアルバイト代わりに動画編集で稼ごうと、無料のソフトを使って独学で始めました。自分では「そこそこのクオリティ」を作れているつもりだったのですが、案件獲得には全く繋がらず……。業界標準である『Premiere Pro』の壁や、一人で学ぶことの限界を痛感していました。\n\nそんな時にパッソを知り、「好きなことを、ちゃんとした仕事にしたい」と一念発起。今では本格的な制作環境でスキルを磨きながら、責任を持って企業案件をしっかりと任せてもらえるようになりました。",
                 credit: "Aさん（在籍クリエイター）",
               },
               {
                 label: "STORY B",
                 heading: "趣味だった動画制作が、「企業案件」として確かな仕事になった",
-                body: "元々は趣味でYouTubeの切り抜き動画などを作っていて、パッソを知りました。最初は『体調のこともあり、自分なんかに本当にできるのかな？』と不安でしたが、実際の企業案件で信頼して仕事を任せてもらえることが、大きなモチベーションになりました。以前は家から出るのも少し億劫だったのですが、今では自分から『もっと案件はないですか？』とスタッフに聞いてしまうほど、前向きに取り組めています。",
+                body: "元々は趣味でYouTubeの切り抜き動画などを作っていて、パッソを知りました。最初は『体調のこともあり、自分なんかに本当にできるのかな？』と不安でしたが、企業案件で信頼して仕事を任せてもらえることが、大きなモチベーションになりました。以前は家から出るのも少し億劫だったのですが、今では自分から『もっと案件はないですか？』とスタッフに聞いてしまうほど、前向きに取り組めています。",
                 credit: "Bさん（在籍クリエイター）",
               },
               {
                 label: "STORY C",
                 heading: "パッソでの経験が、フリーランス独立への確かな土台になった",
-                body: "パッソに通って一番良かったのは、生活リズムが整い、体調が安定したことです。実際の案件に携わることで、具体的な取り組み方や進め方、スタッフの方の案件管理の仕方などが非常に勉強になり、自信に繋がりました。また、ここで携わった多くの企業案件がそのまま自分の強力なポートフォリオになったことで、独立後の案件獲得がとてもやりやすくなりました。",
+                body: "パッソに通って一番良かったのは、生活リズムが整い、体調が安定したことです。案件に携わることで、具体的な取り組み方や進め方、スタッフの方の案件管理の仕方などが非常に勉強になり、自信に繋がりました。また、ここで携わった多くの企業案件がそのまま自分の強力なポートフォリオになったことで、独立後の案件獲得がとてもやりやすくなりました。",
                 credit: "Cさん（フリーランス独立）",
               },
             ].map((story, i) => (
@@ -376,7 +404,7 @@ export default function MovieLP() {
           <div className="cta-message reveal">
             <h2 className="cta-message-heading">まずは一度、スタジオの雰囲気を見にいらっしゃいませんか？</h2>
             <div className="cta-message-body">
-              <p>「実際の制作環境はどんな雰囲気だろう？」<br />そんな疑問があればぜひ一度スタジオの空気を感じにいらしてください。<br />現在の状況やこれから目指したい働き方についてお話ししましょう。</p>
+              <p>「制作環境はどんな雰囲気だろう？」<br />そんな疑問があればぜひ一度スタジオの空気を感じにいらしてください。<br />現在の状況やこれから目指したい働き方についてお話ししましょう。</p>
               <p>見学やご相談にお越しいただいたからといってすぐに利用を決める必要はありません。<br />ここがあなたにとって「心地よく制作に向き合える場所」かどうか、あなた自身の目でゆっくりと確かめていただければと思います。</p>
               <p>少しでもご興味があればまずはLINEよりお気軽にお声がけください。<br />スタッフ一同お会いできるのを楽しみにしております。</p>
             </div>

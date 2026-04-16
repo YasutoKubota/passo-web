@@ -171,17 +171,16 @@ export default function MovieLP() {
         <div className="container">
           <div className="workflow-header reveal">
             <div className="section-label"><span className="dot"></span> WORKFLOW</div>
-            <h2 className="section-title">制作のステップ</h2>
-            <p className="section-sub">煩雑な進行管理や企業とのやり取りはディレクターが担当し、クリエイターが制作に専念できる環境です。</p>
+            <h2 className="section-title">チームで進める制作ステップ</h2>
+            <p className="section-sub">映像制作の現場で、実務に集中できる環境を。パッソアニメーションスタジオでは、専属のディレクターを中心に、それぞれの強みを掛け合わせてひとつのプロジェクトを動かします。</p>
           </div>
 
           <div className="wf-steps-editorial">
             {[
-              { img: "wf-proposal.png", num: 1, title: "案件の決定", desc: "クリエイターのスキルや目標、日々のコンディションを考慮しディレクターが最適なプロジェクトをアサインします。無理のないペースで取り組めるようスケジュールの調整も行います。", note: "", reverse: false },
-              { img: "wf-briefing.png", num: 2, title: "要件の共有と制作スタート", desc: "制作する動画の目的や具体的な要件を対面やチャット（Teams）で共有します。企業との連絡はすべてディレクターが担当するため制作に集中できます。", note: "", reverse: true },
-              { img: "wf-production.png", num: 3, title: "制作と進捗共有", desc: "パーソナルデスクでご自身の作業に集中していただきます。制作中に迷うことがあれば対面やチャット（Teams）でいつでもディレクターに相談できる環境です。", note: "", reverse: false },
-              { img: "wf-review.png", num: 4, title: "レビューと品質向上", desc: "完成した動画はディレクターによるレビューを行います。より良い作品にするための具体的なフィードバックを通じ納品基準を満たすクオリティへ引き上げます。", note: "", reverse: true },
-              { img: "wf-portfolio.png", num: 5, title: "納品、そしてご自身の実績へ", desc: "最終確認を終えた作品はディレクターが責任を持って企業へ納品。携わったプロジェクトはご自身の確かな「実績（ポートフォリオ）」として蓄積されていきます。", note: "", reverse: false },
+              { img: "wf-proposal.png", num: 1, title: "案件の共有・キックオフ", desc: "あなたのスキルに合わせて、ディレクターから最適な案件が共有されます。クライアントとのやり取りもすべてディレクターが担当し、目的や構成が整理された状態でスタートするため、目の前の制作に集中できる環境です。", note: "", reverse: false },
+              { img: "wf-briefing.png", num: 2, title: "編集・制作作業", desc: "共有された構成をもとに、あなたのスキルを活かして編集を進めます。制作中の仕様確認やアイデアの共有は、チャットツール等を用いてシームレスに行われます。作業の手を止めることなく、チームと連携しながら形にしていきます。", note: "", reverse: true },
+              { img: "wf-review.png", num: 3, title: "チームでのブラッシュアップ", desc: "出来上がった映像は、ディレクターと一緒に確認します。作品のクオリティを一段引き上げ、クライアントの期待を超えるための「磨き上げ」の時間です。", note: "", reverse: false },
+              { img: "wf-portfolio.png", num: 4, title: "納品・そして実績へ", desc: "完成した映像をクライアントへ納品します。チームで品質を担保して世に出した実績。その一つひとつが、クリエイターとしてのあなたの価値を証明します。", note: "", reverse: true },
             ].map((s) => (
               <div className={`wf-editorial-step${s.reverse ? " wf-editorial-step--reverse" : ""} reveal`} key={s.num} id={`wf-step${s.num}`}>
                 <div className="wf-editorial-photo">
@@ -195,12 +194,6 @@ export default function MovieLP() {
                 </div>
               </div>
             ))}
-          </div>
-
-          <div className="workflow-closing reveal">
-            <div className="workflow-closing-inner glass">
-              <p>この制作サイクルを無理のないペースで繰り返していく。<br />その経験の積み重ねの中で実践的なテクニックや仕事の進め方などクリエイターとしてのスキルが自然と身についていきます。その積み上げた実績とスキルが将来の選択肢を広げていきます。</p>
-            </div>
           </div>
         </div>
       </section>

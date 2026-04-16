@@ -395,8 +395,9 @@ section {
   top: 0;
   left: 0;
   right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--border-subtle), transparent);
+  height: 60px;
+  background: linear-gradient(to bottom, var(--bg-secondary), #ffffff);
+  pointer-events: none;
 }
 .projects::after {
   content: '';
@@ -404,8 +405,9 @@ section {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--border-subtle), transparent);
+  height: 60px;
+  background: linear-gradient(to bottom, #ffffff, var(--bg-secondary));
+  pointer-events: none;
 }
 
 /* ============================================
@@ -1746,6 +1748,113 @@ section {
 
   /* Footer */
   .site-footer { padding-bottom: 100px; }
+}
+
+/* ============================================
+   SECTION GRADIENT TRANSITIONS
+   ============================================ */
+
+/* Hero → Bridge */
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to bottom, var(--bg-primary), var(--bg-secondary));
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Bridge → Projects */
+.bridge {
+  position: relative;
+}
+.bridge::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to bottom, var(--bg-secondary), #ffffff);
+  pointer-events: none;
+}
+
+/* Workflow → Environment */
+.workflow {
+  position: relative;
+}
+.workflow::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to bottom, var(--bg-secondary), var(--bg-primary));
+  pointer-events: none;
+}
+
+/* Flow → FAQ */
+.flow {
+  position: relative;
+}
+.flow::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to bottom, var(--bg-primary), var(--bg-secondary));
+  pointer-events: none;
+}
+
+/* FAQ → CTA */
+.faq {
+  position: relative;
+}
+.faq::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to bottom, var(--bg-secondary), var(--bg-primary));
+  pointer-events: none;
+}
+
+/* CTA → Trust */
+.final-cta {
+  position: relative;
+}
+.final-cta::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to bottom, var(--bg-primary), var(--bg-accent));
+  pointer-events: none;
+}
+
+/* Trust → About */
+.trust {
+  position: relative;
+}
+.trust::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to bottom, var(--bg-accent), var(--bg-primary));
+  pointer-events: none;
 }
 
 /* ============================================

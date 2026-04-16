@@ -1548,31 +1548,42 @@ section {
   .lifestyle-fitel-visual img { width: 200px; }
 
   .flow-steps {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 16px;
-    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    max-width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    gap: 0;
   }
   .flow-step-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    min-width: 0;
+    align-items: center;
+    width: 100%;
+    max-width: none;
   }
   .flow-step {
-    flex: 1;
-    min-width: 0;
-    word-break: break-all;
-    overflow-wrap: break-word;
-    padding: 36px 16px 28px;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    padding: 20px 28px;
+    width: 100%;
+    gap: 18px;
   }
-  .flow-step-number { width: 32px; height: 32px; font-size: 15px; top: -16px; }
-  .flow-step-icon { width: 42px; height: 42px; margin-bottom: 16px; }
-  .flow-step h4 { font-size: 14px; word-break: keep-all; overflow-wrap: break-word; margin-bottom: 10px; }
-  .flow-step p { font-size: 12px; overflow-wrap: break-word; line-height: 1.9; }
-  .flow-arrow { display: none; }
+  .flow-step-number {
+    position: static;
+    transform: none;
+    width: 36px;
+    height: 36px;
+    font-size: 15px;
+    flex-shrink: 0;
+  }
+  .flow-step-icon { width: 36px; height: 36px; margin: 0; flex-shrink: 0; }
+  .flow-step h4 { font-size: 15px; margin-bottom: 0; white-space: nowrap; flex-shrink: 0; }
+  .flow-step p { font-size: 13px; line-height: 1.7; flex: 1; min-width: 0; }
+  .flow-arrow { display: flex; padding: 6px 0; }
+  .flow-arrow svg { transform: rotate(0deg); width: 18px; height: 18px; }
 
   .cta-btn--line { width: auto; max-width: none; }
   .float-cta { display: none; }
@@ -1603,14 +1614,17 @@ section {
   .env-item-image img { height: 320px; }
   .env-item-body h3 { font-size: 19px; }
 
+  .flow-steps {
+    max-width: 780px;
+  }
   .flow-step-wrapper {
     margin-bottom: 0px;
   }
-  .flow-step { max-width: none; padding: 44px 28px 32px; }
-  .flow-step-number { width: 36px; height: 36px; font-size: 16px; top: -18px; }
-  .flow-step-icon { width: 48px; height: 48px; margin-bottom: 18px; }
-  .flow-step h4 { font-size: 17px; margin-bottom: 12px; }
-  .flow-step p { font-size: 14px; line-height: 1.9; }
+  .flow-step { padding: 24px 36px; gap: 24px; }
+  .flow-step-number { width: 40px; height: 40px; font-size: 16px; }
+  .flow-step-icon { width: 40px; height: 40px; }
+  .flow-step h4 { font-size: 17px; }
+  .flow-step p { font-size: 14px; line-height: 1.8; }
 }
 
 /* ============================================

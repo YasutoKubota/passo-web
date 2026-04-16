@@ -136,7 +136,7 @@ export default function MovieLP() {
           <div className="project-cards">
             {[
               { img: "card-short-video.png", alt: "SNSショート・Web動画広告", title: "SNSショート・Web動画広告", desc: "TikTok、Instagramリール、YouTubeショートなどの縦型動画から、Web上の動画広告まで。テンポの良いカット編集やテロップデザインを形にします。" },
-              { img: "card-corporate-video.png", alt: "コーポレート・採用PR映像", title: "コーポレート・採用PR映像", desc: "企業の公式チャンネルや採用特設サイトに向けた映像制作。経営者や社員のインタビュー、社内風景のドキュメンタリーなど、企業の魅力を視覚的に翻訳し、外部へ発信します。" },
+              { img: "card-corporate-video.png", alt: "コーポレート・採用PR映像", title: "コーポレート・採用PR映像", desc: "企業の公式チャンネルや採用特設サイトに向けた映像制作。経営者や社員のインタビュー、社内風景のドキュメンタリーなど、企業の魅力を視覚的に翻訳し、制作します。" },
               { img: "card-manga-video.png", alt: "漫画動画・YouTubeエンタメ編集", title: "漫画動画・YouTubeエンタメ編集", desc: "企業が運営するビジネス系・エンタメ系チャンネルの動画編集。トークのカットアップや、イラスト素材を活用した漫画動画など、それぞれのチャンネルに合わせた世界観を形にします。" },
               { img: "card-motion-graphics.png", alt: "モーショングラフィックス", title: "モーショングラフィックス（キーフレームアニメーション）", desc: "イラストやテキストなどの素材を、キーフレームを使って動かしていく編集作業。静止画に細やかな動きや表情を加え、映像ならではの豊かな表現を手がけます。" },
             ].map((c, i) => (

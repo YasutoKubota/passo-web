@@ -345,11 +345,10 @@ export default function MovieLP() {
       <section className="final-cta" id="final-cta">
         <div className="container">
           <div className="cta-message reveal">
-            <h2 className="cta-message-heading">まずは一度、スタジオの雰囲気を見にいらっしゃいませんか？</h2>
+            <h2 className="cta-message-heading">まずは、LINEから。</h2>
             <div className="cta-message-body">
-              <p>「制作環境はどんな雰囲気だろう？」<br />そんな疑問があればぜひ一度スタジオの空気を感じにいらしてください。<br />現在の状況やこれから目指したい働き方についてお話ししましょう。</p>
-              <p>見学やご相談にお越しいただいたからといってすぐに利用を決める必要はありません。<br />ここがあなたにとって「心地よく制作に向き合える場所」かどうか、あなた自身の目でゆっくりと確かめていただければと思います。</p>
-              <p>少しでもご興味があればまずはLINEよりお気軽にお声がけください。<br />スタッフ一同お会いできるのを楽しみにしております。</p>
+              <p>気になることがあれば、<br />LINEでメッセージを送ってみてください。</p>
+              <p>見学のご相談や、これからのことについて、<br />ここからお話ししましょう。</p>
             </div>
           </div>
           <div className="reveal">

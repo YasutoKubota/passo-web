@@ -227,33 +227,6 @@ export default function MovieLP() {
         </div>
       </section>
 
-      {/* ── 6. WORK STYLE ── */}
-      <section className="lifestyle" id="workstyle">
-        <div className="container">
-          <div className="lifestyle-header reveal">
-            <div className="section-label"><span className="dot"></span> WORK STYLE</div>
-            <h2 className="section-title">サポート体制</h2>
-          </div>
-          <div className="lifestyle-blocks">
-            <div className="lifestyle-block glass reveal reveal-d1" id="lifestyle-work">
-              <div className="lifestyle-block-inner">
-                <h3>スキルとコンディションに合わせた案件管理</h3>
-                <p>「企業案件＝厳しい納期」という不安を感じる必要はありません。当スタジオではクリエイターの心身の負担となるような無茶な短納期の案件は事前にお断りしています。ディレクターが企業との間で無理のないスケジュールを調整・管理するため納期のプレッシャーに追われることなくご自身のペースで制作に集中していただけます。</p>
-              </div>
-            </div>
-            <div className="lifestyle-block lifestyle-block--fitel glass reveal reveal-d2" id="lifestyle-health">
-              <div className="lifestyle-block-inner">
-                <h3>アプリを活用したコンディションの可視化</h3>
-                <p>安定してクリエイティブな作業を続けるためには日々のコンディション把握が重要です。専用アプリ<strong>『Fitel（フィッテル）』</strong>を用いて日々の状態を記録することでご自身のバイオリズムを客観的に見つめ直し持続可能な働き方へと繋げていきます。</p>
-              </div>
-              <div className="lifestyle-fitel-visual">
-                <img src="/images/fitel-app.png" alt="体調管理ソフトFitelのアプリ画面" width={300} height={600} />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ── 7. FLOW ── */}
       <section className="flow" id="flow">
         <div className="container">

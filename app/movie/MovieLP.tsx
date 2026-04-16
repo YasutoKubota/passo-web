@@ -204,14 +204,14 @@ export default function MovieLP() {
         <div className="container">
           <div className="env-header reveal">
             <div className="section-label"><span className="dot"></span> ENVIRONMENT</div>
-            <h2 className="section-title">制作環境</h2>
-            <p className="section-sub">周囲の目を気にすることなくご自身のペースで作業に向き合えるワークスペースを整えています。</p>
+            <h2 className="section-title">制作に集中できる環境</h2>
+            <p className="section-sub">チームの一員として、目の前の仕事に向き合える環境が整っています。</p>
           </div>
           <div className="env-items">
             {[
-              { img: "env-personal-desk.png", title: "【パーソナルデスク】没頭できる自分だけの空間", desc: "周囲の視線を気にせず制作に深く集中できる半個室型のデスク。", cls: "reveal-left", reverse: false },
-              { img: "env-premiere-pro.png", title: "【Premiere Pro】業界標準の制作ツール", desc: "動画制作の現場で欠かせないAdobe Premiere Proを使用。実戦的なスキルが身につきます。", cls: "reveal-right", reverse: true },
-              { img: "env-teams-chat.png", title: "【チャットツール】仕事の進め方を学ぶ", desc: "案件の指示や相談はMicrosoft Teamsなどのチャットツールで行います。将来の就職やフリーランス活動でも通用する現代的な仕事の進め方を体験できます。", cls: "reveal-left", reverse: false },
+              { img: "env-personal-desk.png", title: "【パーソナルデスク】自分の作業スペース", desc: "視界を遮り、制作に専念できる半個室型のデスクを採用。", cls: "reveal-left", reverse: false },
+              { img: "env-premiere-pro.png", title: "【Premiere Pro】業界標準の制作ツール", desc: "Adobe Premiere Proを使用しています。", cls: "reveal-right", reverse: true },
+              { img: "env-teams-chat.png", title: "【チャットツール】スマートなチーム連携", desc: "ビジネスチャットツールで、チームと連携します。", cls: "reveal-left", reverse: false },
             ].map((e, i) => (
               <div className={`env-item${e.reverse ? " env-item--reverse" : ""} ${e.cls}`} key={i}>
                 <div className="env-item-image">

@@ -93,8 +93,8 @@ export default function MovieLP() {
             PASSO ANIMATION STUDIO
           </div>
           <h1>
-            <span style={{ display: "inline-block" }}>企業案件で創る、</span><span style={{ display: "inline-block" }}>「実務レベル」のポートフォリオ。</span><br />
-            <span style={{ display: "inline-block" }}>それが、あなたを</span><span style={{ display: "inline-block" }}>「選ばれるクリエイター」にする。</span>
+            <span style={{ display: "inline-block" }}>企業案件の映像制作に、</span><span style={{ display: "inline-block" }}>チームで関わる。</span><br />
+            <span style={{ display: "inline-block" }}>その日々が、あなたの</span><span style={{ display: "inline-block" }}>ポートフォリオになる。</span>
           </h1>
           <div className="scroll-hint">
             <span className="scroll-line"></span>

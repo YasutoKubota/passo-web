@@ -349,8 +349,8 @@ export default function MovieLP() {
           <div className="cta-message reveal">
             <h2 className="cta-message-heading">まずは、LINEから。</h2>
             <div className="cta-message-body">
-              <p>気になることがあれば、<br />LINEでメッセージを送ってみてください。</p>
-              <p>見学のご相談や、これからのことについて、<br />ここからお話ししましょう。</p>
+              <p>ご質問や見学のご相談など、<br />LINEからいつでもメッセージを送ってみてください。</p>
+              <p>これからのことについて、ここからお話ししましょう。</p>
             </div>
           </div>
           <div className="reveal">

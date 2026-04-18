@@ -296,49 +296,65 @@
       font-weight: 600;
     }
 
-    /* Signature number moment */
-    .signature-number {
+    /* Facts block — 2-axis editorial moment */
+    .facts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      padding: 44px 0;
+      border-top: 1px solid var(--border-section);
+      border-bottom: 1px solid var(--border-section);
+      position: relative;
+    }
+    .facts::before {
+      content: '';
+      position: absolute;
+      top: 32px;
+      bottom: 32px;
+      left: 50%;
+      width: 1px;
+      background: var(--border-section);
+    }
+    .fact {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 18px;
-      padding: 12px 0;
-      position: relative;
+      gap: 14px;
+      padding: 0 12px;
     }
-    .signature-number::before,
-    .signature-number::after {
-      content: '';
-      display: block;
-      width: 56px;
-      height: 1px;
-      background: var(--border-section);
-    }
-    .signature-big {
+    .fact-eyebrow {
       font-family: var(--font-en);
-      font-size: clamp(48px, 12vw, 84px);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--text-light);
+    }
+    .fact-num {
+      font-family: var(--font-en);
+      font-size: clamp(40px, 9vw, 64px);
       font-weight: 300;
       line-height: 1;
       letter-spacing: -0.02em;
       color: var(--text-primary);
+      display: inline-flex;
+      align-items: baseline;
     }
-    .signature-big sup {
-      font-family: var(--font-jp);
-      font-size: 0.28em;
-      font-weight: 500;
-      letter-spacing: 0.08em;
-      color: var(--text-secondary);
-      vertical-align: baseline;
-      margin-left: 6px;
-      position: relative;
-      top: -0.9em;
-    }
-    .signature-sub {
-      font-size: 13.5px;
+    .fact-num .plus {
+      font-size: 0.42em;
       font-weight: 400;
+      color: var(--text-secondary);
+      margin-left: 3px;
+      position: relative;
+      top: -0.05em;
+    }
+    .fact-label {
+      font-size: 12.5px;
+      font-weight: 500;
       color: var(--text-secondary);
       letter-spacing: 0.06em;
       text-align: center;
-      line-height: 1.9;
+      line-height: 1.7;
     }
 
     /* ============================================
@@ -372,16 +388,24 @@
       letter-spacing: 0.02em;
     }
 
-    /* --- Portal ① Movie (主役) --- */
+    /* --- Portal ① Movie (主役) — Editorial side-by-side --- */
     .portal-main {
-      margin-bottom: 80px;
+      margin-bottom: 88px;
+      display: block;
+    }
+
+    .portal-main-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 32px;
+      align-items: stretch;
     }
 
     .portal-main-visual {
       position: relative;
       border-radius: var(--r-lg);
       overflow: hidden;
-      aspect-ratio: 16 / 10;
+      aspect-ratio: 4 / 5;
       box-shadow: var(--shadow-lg);
       background: var(--bg-accent);
     }
@@ -398,29 +422,32 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(180deg, rgba(42,37,34,0) 40%, rgba(42,37,34,0.5) 100%);
+      background: linear-gradient(180deg, rgba(42,37,34,0) 55%, rgba(42,37,34,0.45) 100%);
       pointer-events: none;
     }
 
     .portal-main-body {
-      padding: 36px 4px 0;
+      padding: 4px 4px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .portal-main-number {
       font-family: var(--font-en);
       font-size: 12px;
       font-weight: 500;
-      letter-spacing: 0.2em;
+      letter-spacing: 0.22em;
       color: var(--text-light);
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
     .portal-main-name {
-      font-size: clamp(26px, 5vw, 36px);
+      font-size: clamp(28px, 5.5vw, 40px);
       font-weight: 900;
-      line-height: 1.4;
+      line-height: 1.35;
       letter-spacing: 0.01em;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
     }
 
     .portal-main-tag {
@@ -428,8 +455,7 @@
       line-height: 2.1;
       letter-spacing: 0.03em;
       color: var(--text-secondary);
-      margin-bottom: 32px;
-      max-width: 540px;
+      margin-bottom: 36px;
     }
 
     /* Portfolio strip */
@@ -437,8 +463,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 10px;
-      margin-bottom: 36px;
-      max-width: 520px;
+      margin-bottom: 14px;
     }
     .portfolio-item {
       aspect-ratio: 4 / 3;
@@ -724,28 +749,21 @@
         padding: 112px 0 120px;
       }
 
+      .portal-main-grid {
+        grid-template-columns: 1fr 1.05fr;
+        gap: 56px;
+      }
+
       .portal-main-visual {
-        aspect-ratio: 16 / 8;
+        aspect-ratio: 4 / 5;
       }
 
       .portal-main-body {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 48px;
-        align-items: start;
-        padding-top: 44px;
+        padding: 8px 0;
       }
 
-      .portal-main-head {
-        grid-column: 1;
-      }
-      .portal-main-content {
-        grid-column: 2;
-        padding-top: 8px;
-      }
-
-      .portfolio-strip {
-        max-width: none;
+      .portal-main-name {
+        font-size: clamp(32px, 4vw, 44px);
       }
 
       .portal-sub {
@@ -775,8 +793,8 @@
       .intro {
         padding: 160px 0 144px;
       }
-      .portal-main-body {
-        gap: 64px;
+      .portal-main-grid {
+        gap: 72px;
       }
     }
 
@@ -814,11 +832,19 @@
   <section class="intro" id="intro">
     <div class="container-narrow">
       <div class="intro-body">
-        <p class="reveal">パッソは、動画編集とイラスト制作の2つのチームで<strong>制作業務を行うスタジオ</strong>です。取り組むのは、企業案件と自社メディアの<strong>実制作</strong>。</p>
+        <p class="reveal">パッソは、動画編集とイラスト制作の2つのチームで<strong>制作業務を行うスタジオ</strong>です。取り組むのは、企業から受託した案件と、自社メディアの<strong>実制作</strong>です。</p>
 
-        <div class="signature-number reveal reveal-d1">
-          <div class="signature-big">10,000<sup>フォロワー規模</sup></div>
-          <div class="signature-sub">自社メディアを、<br />チームで企画から運用まで行っています。</div>
+        <div class="facts reveal reveal-d1">
+          <div class="fact">
+            <div class="fact-eyebrow">Client Work</div>
+            <div class="fact-num">200<span class="plus">+</span></div>
+            <div class="fact-label">年間 / 企業案件</div>
+          </div>
+          <div class="fact">
+            <div class="fact-eyebrow">Owned Media</div>
+            <div class="fact-num">10,000</div>
+            <div class="fact-label">自社メディア / フォロワー規模</div>
+          </div>
         </div>
 
         <p class="reveal reveal-d2">チームで工程を分担し、納品まで関わります。<br />積み上がるのは、ポートフォリオと実務経験です。</p>
@@ -836,18 +862,16 @@
 
       <!-- Portal ①: 動画編集チーム -->
       <a href="/movie" class="portal-main reveal reveal-d1" aria-label="動画編集チームの詳細ページへ">
-        <div class="portal-main-visual">
-          <img src="/lp/images/movie-workspace.jpg" alt="動画編集チームの制作風景" width="1600" height="1000" />
-        </div>
-
-        <div class="portal-main-body">
-          <div class="portal-main-head">
-            <div class="portal-main-number">01 / MOVIE EDITING</div>
-            <h3 class="portal-main-name">動画編集チーム</h3>
-            <p class="portal-main-tag">企業の映像案件を、チームで制作。SNS向けショート動画から企業プロモーション、自社メディア運用まで。Premiere Pro を中心に、撮影 / 編集 / 納品を分担しています。</p>
+        <div class="portal-main-grid">
+          <div class="portal-main-visual">
+            <img src="/lp/images/movie-team-collab.jpg" alt="動画編集チームの制作風景" width="1200" height="1500" />
           </div>
 
-          <div class="portal-main-content">
+          <div class="portal-main-body">
+            <div class="portal-main-number">01 / MOVIE EDITING</div>
+            <h3 class="portal-main-name">動画編集チーム</h3>
+            <p class="portal-main-tag">企業の映像案件と自社メディアを、チームで制作。SNS向けショート動画から企業プロモーションまで、Premiere Pro を中心に、編集から納品まで分担しています。</p>
+
             <div class="portfolio-strip" aria-hidden="true">
               <div class="portfolio-item"><img src="/lp/images/work-ashibaya.jpg" alt="" width="400" height="300" loading="lazy" /></div>
               <div class="portfolio-item"><img src="/lp/images/work-chibaru.jpg" alt="" width="400" height="300" loading="lazy" /></div>
@@ -855,7 +879,7 @@
             </div>
             <span class="portfolio-label">Recent client work</span>
 
-            <div style="margin-top: 40px;">
+            <div style="margin-top: 36px;">
               <span class="btn-main-cta">
                 動画編集チームを見る
                 <span class="arrow">→</span>

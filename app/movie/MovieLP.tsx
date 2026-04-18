@@ -82,7 +82,7 @@ export default function MovieLP() {
       {/* ── 1. HERO ── */}
       <section className="hero" id="hero">
         <div className="hero-bg">
-          <img src="/images/hero-creator.png" alt="" width={1200} height={800} className="hero-bg-fallback" />
+          <img src="/images/photo-hero-collab.jpg" alt="" width={1200} height={800} className="hero-bg-fallback" />
           <video className="hero-video" autoPlay muted loop playsInline disablePictureInPicture preload="auto">
             <source src="/images/hero-bg-video.mp4" type="video/mp4" />
           </video>
@@ -135,10 +135,10 @@ export default function MovieLP() {
           </div>
           <div className="project-cards">
             {[
-              { img: "card-short-video.png", alt: "SNSショート・Web動画広告", title: "SNSショート・Web動画広告", desc: "TikTok、Instagramリール、YouTubeショートなどの縦型動画から、Web上の動画広告まで。テンポの良いカット編集やテロップデザインを形にします。" },
-              { img: "card-corporate-video.png", alt: "コーポレート・採用PR映像", title: "コーポレート・採用PR映像", desc: "企業の公式チャンネルや採用特設サイトに向けた映像制作。経営者や社員のインタビュー、社内風景のドキュメンタリーなど、企業の魅力を視覚的に翻訳し、制作します。" },
-              { img: "card-manga-video.png", alt: "漫画動画・YouTubeエンタメ編集", title: "漫画動画・YouTubeエンタメ編集", desc: "企業が運営するビジネス系・エンタメ系チャンネルの動画編集。トークのカットアップや、イラスト素材を活用した漫画動画など、それぞれのチャンネルに合わせた世界観を形にします。" },
-              { img: "card-motion-graphics.png", alt: "モーショングラフィックス", title: "モーショングラフィックス（キーフレームアニメーション）", desc: "イラストやテキストなどの素材を、キーフレームを使って動かしていく編集作業。静止画に細やかな動きや表情を加え、映像ならではの豊かな表現を手がけます。" },
+              { img: "photo-card-short.jpg", alt: "SNSショート・Web動画広告", title: "SNSショート・Web動画広告", desc: "TikTok、Instagramリール、YouTubeショートなどの縦型動画から、Web上の動画広告まで。テンポの良いカット編集やテロップデザインを形にします。" },
+              { img: "photo-card-corporate.jpg", alt: "コーポレート・採用PR映像", title: "コーポレート・採用PR映像", desc: "企業の公式チャンネルや採用特設サイトに向けた映像制作。経営者や社員のインタビュー、社内風景のドキュメンタリーなど、企業の魅力を視覚的に翻訳し、制作します。" },
+              { img: "photo-card-manga.jpg", alt: "漫画動画・YouTubeエンタメ編集", title: "漫画動画・YouTubeエンタメ編集", desc: "企業が運営するビジネス系・エンタメ系チャンネルの動画編集。トークのカットアップや、イラスト素材を活用した漫画動画など、それぞれのチャンネルに合わせた世界観を形にします。" },
+              { img: "photo-card-motion.jpg", alt: "モーショングラフィックス", title: "モーショングラフィックス（キーフレームアニメーション）", desc: "イラストやテキストなどの素材を、キーフレームを使って動かしていく編集作業。静止画に細やかな動きや表情を加え、映像ならではの豊かな表現を手がけます。" },
             ].map((c, i) => (
               <div className={`project-card glass reveal reveal-d${Math.min(i + 1, 3)}`} key={i}>
                 <div className="project-card-thumb">
@@ -177,10 +177,10 @@ export default function MovieLP() {
 
           <div className="wf-steps-editorial">
             {[
-              { img: "wf-proposal.png", num: 1, title: "案件の共有・キックオフ", desc: "あなたのスキルに合わせて、ディレクターから最適な案件が共有されます。クライアントとのやり取りもすべてディレクターが担当し、目的や構成が整理された状態でスタートするため、目の前の制作に集中できる環境です。", note: "", reverse: false },
-              { img: "wf-briefing.png", num: 2, title: "編集・制作作業", desc: "共有された構成をもとに、あなたのスキルを活かして編集を進めます。制作中の仕様確認やアイデアの共有は、チャットツール等を用いてシームレスに行われます。作業の手を止めることなく、チームと連携しながら形にしていきます。", note: "", reverse: true },
-              { img: "wf-review.png", num: 3, title: "チームでのブラッシュアップ", desc: "出来上がった映像は、ディレクターと一緒に確認します。作品のクオリティを一段引き上げ、クライアントの期待を超えるための「磨き上げ」の時間です。", note: "", reverse: false },
-              { img: "wf-portfolio.png", num: 4, title: "納品・そして実績へ", desc: "完成した映像をクライアントへ納品します。チームで品質を担保して世に出した実績。その一つひとつが、クリエイターとしてのあなたの価値を証明します。", note: "", reverse: true },
+              { img: "photo-wf-proposal.jpg", num: 1, title: "案件の共有・キックオフ", desc: "あなたのスキルに合わせて、ディレクターから最適な案件が共有されます。クライアントとのやり取りもすべてディレクターが担当し、目的や構成が整理された状態でスタートするため、目の前の制作に集中できる環境です。", note: "", reverse: false },
+              { img: "photo-wf-briefing.jpg", num: 2, title: "編集・制作作業", desc: "共有された構成をもとに、あなたのスキルを活かして編集を進めます。制作中の仕様確認やアイデアの共有は、チャットツール等を用いてシームレスに行われます。作業の手を止めることなく、チームと連携しながら形にしていきます。", note: "", reverse: true },
+              { img: "photo-wf-review.jpg", num: 3, title: "チームでのブラッシュアップ", desc: "出来上がった制作物は、ディレクターと一緒に確認します。クオリティを一段引き上げ、クライアントの期待を超えるための「磨き上げ」の時間です。", note: "", reverse: false },
+              { img: "photo-wf-portfolio.jpg", num: 4, title: "納品・そして実績へ", desc: "完成した映像をクライアントへ納品します。チームで品質を担保して世に出した実績。その一つひとつが、クリエイターとしてのあなたの価値を証明します。", note: "", reverse: true },
             ].map((s) => (
               <div className={`wf-editorial-step${s.reverse ? " wf-editorial-step--reverse" : ""} reveal`} key={s.num} id={`wf-step${s.num}`}>
                 <div className="wf-editorial-photo">
@@ -209,9 +209,9 @@ export default function MovieLP() {
           </div>
           <div className="env-items">
             {[
-              { img: "env-personal-desk.png", title: "【パーソナルデスク】自分の作業スペース", desc: "視界を遮り、制作に専念できる半個室型のデスクを採用。", cls: "reveal-left", reverse: false },
-              { img: "env-premiere-pro.png", title: "【Premiere Pro】業界標準の制作ツール", desc: "Adobe Premiere Proを使用しています。", cls: "reveal-right", reverse: true },
-              { img: "env-teams-chat.png", title: "【チャットツール】スマートなチーム連携", desc: "ビジネスチャットツールで、チームと連携します。", cls: "reveal-left", reverse: false },
+              { img: "photo-env-desk.jpg", title: "【パーソナルデスク】自分の作業スペース", desc: "視界を遮り、制作に専念できる半個室型のデスクを採用。", cls: "reveal-left", reverse: false },
+              { img: "photo-env-premiere.jpg", title: "【Premiere Pro】業界標準の制作ツール", desc: "Adobe Premiere Proを使用しています。", cls: "reveal-right", reverse: true },
+              { img: "photo-env-teams.jpg", title: "【チャットツール】スマートなチーム連携", desc: "ビジネスチャットツールで、チームと連携します。", cls: "reveal-left", reverse: false },
             ].map((e, i) => (
               <div className={`env-item${e.reverse ? " env-item--reverse" : ""} ${e.cls}`} key={i}>
                 <div className="env-item-image">
